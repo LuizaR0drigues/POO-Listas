@@ -3,11 +3,15 @@
 int main()
 {
     int n;
-    cin >> n
+    std::cin >> n;
 
-    for(int i =0; i<=2*n; i++)
+   for(int i =0; i<=2*n; i++)
     {
-        std:: cout<< i << std::endl;
+        if (i < 2 * n) {
+            std::cout << i << ", "; 
+        } else {
+            std::cout << i; 
+        }
     }
     return 0;
 
