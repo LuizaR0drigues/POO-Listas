@@ -7,7 +7,7 @@ int soma(double a, double b)
     int partint;
 
     partint = (int(a) +  int(b));
-    //std:: cout << partint;
+    
     return partint;
 }
 int main()
