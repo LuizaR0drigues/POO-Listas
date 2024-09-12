@@ -19,5 +19,5 @@ int main()
     dist = sqrt(pow((x1 - x2), 2) + pow((y1 - y2),2));
     
     //usando a função setprecision(x) para definir a precisão de x casas decimais
-    std :: cout  << std:: fixed << std :: setprecision(5) << dist << std::endl;
+    std :: cout  << std:: fixed << std :: setprecision(4) << dist << std::endl;
 }
