@@ -6,7 +6,7 @@ int soma(double a, double b)
 {
     int partint;
 
-    partint = (int(a) +  int(b));
+    partint = static_cast<int>(a+b);
     
     return partint;
 }
