@@ -20,7 +20,7 @@ int main()
     
     //arredondamento manual
     //predist = std::round(dist *1000.0)/1000.0;
-    
+    //std:: cout << dist << std:: endl;
     //usando a função setprecision(x) para definir a precisão de 4 casas decimais
-    std :: cout  << std :: setprecision(5) << dist << std::endl;
+    std :: cout  << std :: fixed << std :: setprecision(4) << dist << std::endl;
 }
