@@ -9,19 +9,17 @@ int pow(int b, int e, int m)
    aux = b;
    while (i < e)
    {
-    if (i == 0)
+    if (i == 0) //caso do numero ser elevado a 0
     {
         aux *= 1;
     }
-    else{
+    else{ //utilizada a estrageia de somatoria de (b*b...) por n vezes
      aux *= b;
     }
     i++;
-     //cout << aux <<  endl;
    }
    
     resto =  aux % m;
-    cout << resto<< endl;
    return resto;
 }
 
@@ -29,4 +27,5 @@ int main()
 {   int num1, num2, num3;
     cin >> num1 >> num2 >> num3;
     int test = pow(num1, num2, num3);
+    cout << test << endl;
 }
