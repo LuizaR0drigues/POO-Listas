@@ -28,4 +28,6 @@ int main()
     cin >> num1 >> num2 >> num3;
     int test = pow(num1, num2, num3);
     cout << test << endl;
+
+    return 0;
 }
