@@ -1,0 +1,1768 @@
+Versão do G++:
+g++ (Debian 12.2.0-14) 12.2.0
+Copyright (C) 2022 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Varificando data de envio...
+AGORA: 2024-10-29 12:44:53.343478-03:00
+PRAZO MÁXIMO: 2024-11-06 23:59:59-03:06
+Testando sua solucao...
+Procurando exercício 1...
+Exercício 1...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex1.cpp" 
+Teste 1 deu errado! +0.013
+O resultado para
+#include<iostream>
+int main() {
+    Televisao tv;
+    std::cout << tv << std::endl; 
+    tv.canal_cima();
+    std::cout << tv << std::endl;
+    tv.canal_baixo();
+    std::cout << tv << std::endl;
+    tv.liga();
+    std::cout << tv << std::endl;
+    tv.canal_cima();
+    std::cout << tv << std::endl;
+    tv.canal_baixo();
+    std::cout << tv << std::endl;
+    tv.desliga();
+    std::cout << tv << std::endl;
+    tv.canal_cima();
+    std::cout << tv << std::endl;
+    return 0;
+}
+
+deveria ser
+(desligada, 1)
+(desligada, 1)
+(desligada, 1)
+(ligada, 1)
+(ligada, 2)
+(ligada, 1)
+(desligada, 1)
+(desligada, 1)
+mas deu
+(desligada, 1)
+
+(desligada, 1)
+
+(desligada, 1)
+
+(ligada, 1)
+
+(ligada, 2)
+
+(ligada, 1)
+
+(desligada, 1)
+
+(desligada, 1)
+
+
+Teste 2 deu errado! +0.008
+O resultado para
+#include<iostream>
+int main() {
+    Televisao tv(true, 81);
+    tv.desliga();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.canal_cima();
+    tv.canal_baixo();
+    std::cout << tv << std::endl;    tv.liga();
+    tv.liga();
+    tv.desliga();
+    std::cout << tv << std::endl;    tv.desliga();
+    std::cout << tv << std::endl;    tv.liga();
+    std::cout << tv << std::endl;    tv.desliga();
+    tv.desliga();
+    tv.canal_baixo();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.liga();
+    tv.canal_baixo();
+    tv.desliga();
+    tv.canal_baixo();
+    tv.desliga();
+    tv.liga();
+    tv.desliga();
+    std::cout << tv << std::endl;    tv.desliga();
+    std::cout << tv << std::endl;    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.liga();
+    tv.liga();
+    tv.canal_baixo();
+    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.canal_cima();
+    tv.desliga();
+    tv.canal_cima();
+    tv.liga();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.liga();
+    tv.desliga();
+    tv.desliga();
+    tv.desliga();
+    tv.canal_cima();
+    tv.canal_cima();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.desliga();
+    tv.canal_baixo();
+    tv.canal_cima();
+    tv.desliga();
+    tv.desliga();
+    tv.desliga();
+    tv.liga();
+    tv.desliga();
+    std::cout << tv << std::endl;    tv.canal_cima();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.desliga();
+    tv.canal_baixo();
+    tv.liga();
+    std::cout << tv << std::endl;    tv.liga();
+    tv.canal_cima();
+    tv.liga();
+    tv.canal_baixo();
+    tv.liga();
+    tv.desliga();
+    tv.desliga();
+    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.liga();
+    tv.canal_baixo();
+    std::cout << tv << std::endl;    tv.desliga();
+    tv.canal_baixo();
+    tv.canal_cima();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    std::cout << tv << std::endl;    tv.liga();
+    tv.canal_cima();
+    tv.liga();
+    tv.canal_baixo();
+    std::cout << tv << std::endl;    return 0;
+}
+deveria ser
+(desligada, 81)
+(desligada, 81)
+(desligada, 81)
+(desligada, 81)
+(desligada, 81)
+(ligada, 81)
+(desligada, 81)
+(desligada, 81)
+(desligada, 80)
+(desligada, 80)
+(desligada, 80)
+(desligada, 80)
+(desligada, 80)
+(ligada, 80)
+(desligada, 78)
+(desligada, 78)
+(desligada, 78)
+(desligada, 78)
+(ligada, 78)
+(desligada, 78)
+(desligada, 78)
+(ligada, 77)
+(desligada, 77)
+(ligada, 77)
+
+mas deu
+(desligada, 81)
+
+(desligada, 81)
+
+(desligada, 81)
+
+(desligada, 81)
+
+(desligada, 81)
+
+(ligada, 81)
+
+(desligada, 81)
+
+(desligada, 81)
+
+(desligada, 80)
+
+(desligada, 80)
+
+(desligada, 80)
+
+(desligada, 80)
+
+(desligada, 80)
+
+(ligada, 80)
+
+(desligada, 78)
+
+(desligada, 78)
+
+(desligada, 78)
+
+(desligada, 78)
+
+(ligada, 78)
+
+(desligada, 78)
+
+(desligada, 78)
+
+(ligada, 77)
+
+(desligada, 77)
+
+(ligada, 77)
+
+
+Teste 3 deu errado! +0.004
+O resultado para
+#include<iostream>
+int main() {
+    Televisao tv(false, 67);
+    tv.canal_cima();
+    tv.desliga();
+    tv.canal_cima();
+    tv.canal_baixo();
+    tv.desliga();
+    tv.canal_baixo();
+    tv.desliga();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.liga();
+    tv.canal_baixo();
+    tv.canal_cima();
+    tv.canal_baixo();
+    std::cout << tv << std::endl;    tv.liga();
+    std::cout << tv << std::endl;    tv.liga();
+    tv.canal_baixo();
+    std::cout << tv << std::endl;    tv.desliga();
+    tv.canal_cima();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.canal_baixo();
+    tv.desliga();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.liga();
+    std::cout << tv << std::endl;    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.canal_cima();
+    tv.canal_baixo();
+    tv.liga();
+    std::cout << tv << std::endl;    tv.liga();
+    std::cout << tv << std::endl;    tv.desliga();
+    tv.canal_baixo();
+    tv.liga();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.desliga();
+    tv.canal_cima();
+    tv.liga();
+    tv.desliga();
+    tv.desliga();
+    tv.canal_baixo();
+    tv.canal_cima();
+    tv.desliga();
+    tv.canal_baixo();
+    tv.canal_cima();
+    tv.desliga();
+    tv.canal_cima();
+    tv.liga();
+    std::cout << tv << std::endl;    tv.canal_baixo();
+    tv.liga();
+    std::cout << tv << std::endl;    tv.liga();
+    tv.canal_baixo();
+    std::cout << tv << std::endl;    tv.desliga();
+    tv.canal_baixo();
+    tv.canal_cima();
+    tv.desliga();
+    tv.desliga();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.canal_cima();
+    tv.canal_cima();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.liga();
+    tv.desliga();
+    tv.desliga();
+    tv.canal_cima();
+    tv.liga();
+    tv.liga();
+    tv.canal_cima();
+    tv.desliga();
+    tv.liga();
+    tv.canal_baixo();
+    tv.canal_cima();
+    return 0;
+}
+deveria ser
+(ligada, 66)
+(ligada, 66)
+(ligada, 65)
+(desligada, 65)
+(desligada, 65)
+(ligada, 65)
+(ligada, 66)
+(ligada, 66)
+(ligada, 66)
+(ligada, 64)
+(ligada, 63)
+(ligada, 62)
+(desligada, 62)
+(desligada, 62)
+
+mas deu
+(ligada, 66)
+
+(ligada, 66)
+
+(ligada, 65)
+
+(desligada, 65)
+
+(desligada, 65)
+
+(ligada, 65)
+
+(ligada, 66)
+
+(ligada, 66)
+
+(ligada, 66)
+
+(ligada, 64)
+
+(ligada, 63)
+
+(ligada, 62)
+
+(desligada, 62)
+
+(desligada, 62)
+
+
+Teste 4 deu errado! +0.009
+O resultado para
+#include<iostream>
+int main() {
+    Televisao tv(true, 42);
+    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.desliga();
+    std::cout << tv << std::endl;    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.desliga();
+    tv.desliga();
+    tv.canal_cima();
+    tv.canal_baixo();
+    tv.liga();
+    std::cout << tv << std::endl;    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.desliga();
+    tv.desliga();
+    tv.liga();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.desliga();
+    tv.canal_cima();
+    tv.liga();
+    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.liga();
+    tv.liga();
+    tv.desliga();
+    tv.desliga();
+    tv.canal_cima();
+    tv.desliga();
+    tv.canal_baixo();
+    tv.liga();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.canal_baixo();
+    tv.desliga();
+    tv.desliga();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.desliga();
+    tv.canal_baixo();
+    tv.liga();
+    tv.liga();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.desliga();
+    tv.canal_baixo();
+    tv.liga();
+    tv.canal_baixo();
+    std::cout << tv << std::endl;    tv.liga();
+    tv.canal_baixo();
+    tv.liga();
+    tv.canal_cima();
+    tv.canal_baixo();
+    std::cout << tv << std::endl;    tv.liga();
+    tv.canal_baixo();
+    std::cout << tv << std::endl;    tv.canal_baixo();
+    tv.canal_cima();
+    tv.canal_baixo();
+    tv.desliga();
+    tv.canal_baixo();
+    tv.canal_cima();
+    tv.canal_baixo();
+    tv.desliga();
+    return 0;
+}
+deveria ser
+(desligada, 38)
+(ligada, 38)
+(ligada, 34)
+(ligada, 34)
+(ligada, 34)
+(ligada, 34)
+(ligada, 33)
+(ligada, 33)
+(ligada, 32)
+(ligada, 31)
+(ligada, 30)
+
+mas deu
+(desligada, 38)
+
+(ligada, 38)
+
+(ligada, 34)
+
+(ligada, 34)
+
+(ligada, 34)
+
+(ligada, 34)
+
+(ligada, 33)
+
+(ligada, 33)
+
+(ligada, 32)
+
+(ligada, 31)
+
+(ligada, 30)
+
+
+Teste 5 deu errado! +0.014
+O resultado para
+#include<iostream>
+int main() {
+    Televisao tv(false, 35);
+    std::cout << tv << std::endl;    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.canal_baixo();
+    tv.canal_cima();
+    tv.canal_cima();
+    tv.canal_baixo();
+    tv.canal_cima();
+    tv.desliga();
+    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.canal_cima();
+    tv.canal_cima();
+    tv.canal_cima();
+    tv.desliga();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.canal_baixo();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.desliga();
+    tv.desliga();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.liga();
+    tv.desliga();
+    tv.liga();
+    tv.liga();
+    tv.canal_baixo();
+    tv.desliga();
+    std::cout << tv << std::endl;    tv.canal_cima();
+    tv.canal_baixo();
+    std::cout << tv << std::endl;    tv.liga();
+    tv.canal_baixo();
+    tv.desliga();
+    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.desliga();
+    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.liga();
+    tv.canal_cima();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.canal_cima();
+    tv.canal_cima();
+    tv.canal_baixo();
+    tv.canal_cima();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.desliga();
+    tv.liga();
+    tv.canal_cima();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.liga();
+    tv.liga();
+    std::cout << tv << std::endl;    tv.desliga();
+    tv.desliga();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.canal_cima();
+    return 0;
+}
+deveria ser
+(desligada, 35)
+(desligada, 35)
+(desligada, 35)
+(desligada, 35)
+(desligada, 35)
+(desligada, 35)
+(desligada, 35)
+(desligada, 35)
+(desligada, 35)
+(desligada, 35)
+(desligada, 35)
+(desligada, 35)
+(desligada, 34)
+(desligada, 34)
+(desligada, 33)
+(desligada, 33)
+(ligada, 32)
+(ligada, 32)
+(ligada, 32)
+(ligada, 31)
+(desligada, 31)
+(desligada, 31)
+
+mas deu
+(desligada, 35)
+
+(desligada, 35)
+
+(desligada, 35)
+
+(desligada, 35)
+
+(desligada, 35)
+
+(desligada, 35)
+
+(desligada, 35)
+
+(desligada, 35)
+
+(desligada, 35)
+
+(desligada, 35)
+
+(desligada, 35)
+
+(desligada, 35)
+
+(desligada, 34)
+
+(desligada, 34)
+
+(desligada, 33)
+
+(desligada, 33)
+
+(ligada, 32)
+
+(ligada, 32)
+
+(ligada, 32)
+
+(ligada, 31)
+
+(desligada, 31)
+
+(desligada, 31)
+
+
+Teste 6: correto! +0.050
+Teste 7 deu errado! +0.007
+O resultado para
+#include<iostream>
+int main() {
+    Televisao tv(false, 99);
+    tv.liga();
+    tv.canal_cima();
+    tv.desliga();
+    tv.canal_cima();
+    tv.canal_baixo();
+    tv.canal_cima();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.canal_cima();
+    tv.desliga();
+    std::cout << tv << std::endl;    tv.liga();
+    tv.canal_cima();
+    tv.desliga();
+    tv.canal_cima();
+    tv.desliga();
+    tv.liga();
+    tv.liga();
+    tv.liga();
+    tv.canal_baixo();
+    tv.desliga();
+    tv.desliga();
+    tv.canal_baixo();
+    tv.liga();
+    tv.liga();
+    tv.desliga();
+    tv.canal_baixo();
+    tv.liga();
+    std::cout << tv << std::endl;    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.desliga();
+    tv.desliga();
+    tv.liga();
+    tv.liga();
+    std::cout << tv << std::endl;    tv.desliga();
+    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.liga();
+    tv.canal_cima();
+    tv.canal_baixo();
+    std::cout << tv << std::endl;    tv.canal_baixo();
+    tv.desliga();
+    tv.liga();
+    tv.desliga();
+    tv.desliga();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.canal_cima();
+    tv.canal_baixo();
+    tv.liga();
+    tv.liga();
+    tv.liga();
+    tv.canal_cima();
+    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.desliga();
+    tv.liga();
+    tv.liga();
+    tv.desliga();
+    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.canal_cima();
+    tv.liga();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.liga();
+    tv.canal_baixo();
+    tv.desliga();
+    tv.liga();
+    tv.desliga();
+    std::cout << tv << std::endl;    tv.liga();
+    tv.canal_cima();
+    tv.desliga();
+    tv.canal_baixo();
+    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.desliga();
+    std::cout << tv << std::endl;    tv.canal_cima();
+    tv.desliga();
+    tv.desliga();
+    tv.desliga();
+    tv.canal_cima();
+    tv.liga();
+    return 0;
+}
+deveria ser
+(desligada, 100)
+(ligada, 100)
+(ligada, 98)
+(desligada, 98)
+(ligada, 98)
+(desligada, 97)
+(desligada, 97)
+(ligada, 99)
+(desligada, 99)
+(ligada, 99)
+(ligada, 99)
+(desligada, 98)
+(desligada, 99)
+(desligada, 99)
+
+mas deu
+(desligada, 100)
+
+(ligada, 100)
+
+(ligada, 98)
+
+(desligada, 98)
+
+(ligada, 98)
+
+(desligada, 97)
+
+(desligada, 97)
+
+(ligada, 99)
+
+(desligada, 99)
+
+(ligada, 99)
+
+(ligada, 99)
+
+(desligada, 98)
+
+(desligada, 99)
+
+(desligada, 99)
+
+
+Teste 8 deu errado! +0.011
+O resultado para
+#include<iostream>
+int main() {
+    Televisao tv(false, 41);
+    tv.desliga();
+    tv.liga();
+    tv.canal_cima();
+    tv.desliga();
+    tv.canal_baixo();
+    tv.liga();
+    tv.desliga();
+    std::cout << tv << std::endl;    tv.canal_cima();
+    tv.liga();
+    tv.canal_cima();
+    tv.liga();
+    tv.liga();
+    tv.liga();
+    std::cout << tv << std::endl;    tv.desliga();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.canal_baixo();
+    tv.liga();
+    std::cout << tv << std::endl;    tv.liga();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.canal_baixo();
+    tv.canal_cima();
+    tv.canal_baixo();
+    tv.canal_cima();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.desliga();
+    return 0;
+}
+deveria ser
+(desligada, 42)
+(ligada, 43)
+(desligada, 43)
+(desligada, 43)
+(ligada, 43)
+(ligada, 43)
+(ligada, 43)
+(ligada, 43)
+(ligada, 43)
+
+mas deu
+(desligada, 42)
+
+(ligada, 43)
+
+(desligada, 43)
+
+(desligada, 43)
+
+(ligada, 43)
+
+(ligada, 43)
+
+(ligada, 43)
+
+(ligada, 43)
+
+(ligada, 43)
+
+
+Teste 9 deu errado! +0.012
+O resultado para
+#include<iostream>
+int main() {
+    Televisao tv(true, 34);
+    std::cout << tv << std::endl;    tv.desliga();
+    std::cout << tv << std::endl;    tv.canal_baixo();
+    tv.liga();
+    tv.canal_cima();
+    tv.liga();
+    tv.desliga();
+    tv.canal_cima();
+    tv.canal_baixo();
+    tv.canal_cima();
+    tv.desliga();
+    tv.canal_baixo();
+    tv.desliga();
+    tv.canal_cima();
+    tv.liga();
+    tv.canal_baixo();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.canal_baixo();
+    tv.liga();
+    tv.desliga();
+    tv.liga();
+    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.desliga();
+    tv.canal_cima();
+    tv.desliga();
+    std::cout << tv << std::endl;    tv.liga();
+    tv.desliga();
+    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.canal_baixo();
+    tv.canal_cima();
+    tv.canal_cima();
+    tv.desliga();
+    tv.liga();
+    tv.desliga();
+    tv.liga();
+    std::cout << tv << std::endl;    tv.canal_baixo();
+    std::cout << tv << std::endl;    tv.desliga();
+    tv.canal_baixo();
+    tv.canal_cima();
+    tv.liga();
+    tv.canal_cima();
+    tv.desliga();
+    tv.canal_cima();
+    tv.canal_baixo();
+    std::cout << tv << std::endl;    tv.liga();
+    tv.desliga();
+    std::cout << tv << std::endl;    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.canal_cima();
+    tv.liga();
+    std::cout << tv << std::endl;    tv.canal_baixo();
+    return 0;
+}
+deveria ser
+(ligada, 34)
+(desligada, 34)
+(ligada, 34)
+(ligada, 34)
+(ligada, 34)
+(desligada, 34)
+(desligada, 34)
+(ligada, 34)
+(ligada, 33)
+(desligada, 34)
+(desligada, 34)
+(desligada, 34)
+(ligada, 34)
+
+mas deu
+(ligada, 34)
+
+(desligada, 34)
+
+(ligada, 34)
+
+(ligada, 34)
+
+(ligada, 34)
+
+(desligada, 34)
+
+(desligada, 34)
+
+(ligada, 34)
+
+(ligada, 33)
+
+(desligada, 34)
+
+(desligada, 34)
+
+(desligada, 34)
+
+(ligada, 34)
+
+
+Teste 10: correto! +0.050
+Teste 11 deu errado! +0.013
+O resultado para
+#include<iostream>
+int main() {
+    Televisao tv(false, 42);
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.liga();
+    tv.canal_cima();
+    tv.canal_baixo();
+    tv.canal_cima();
+    tv.liga();
+    tv.liga();
+    tv.canal_cima();
+    tv.desliga();
+    tv.liga();
+    tv.desliga();
+    tv.desliga();
+    tv.canal_cima();
+    tv.canal_cima();
+    tv.liga();
+    tv.desliga();
+    tv.desliga();
+    tv.liga();
+    std::cout << tv << std::endl;    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.canal_baixo();
+    std::cout << tv << std::endl;    tv.liga();
+    tv.canal_baixo();
+    tv.liga();
+    std::cout << tv << std::endl;    tv.canal_baixo();
+    tv.liga();
+    tv.canal_cima();
+    tv.liga();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.canal_baixo();
+    tv.canal_cima();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.liga();
+    tv.desliga();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.liga();
+    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.canal_cima();
+    tv.desliga();
+    tv.canal_cima();
+    tv.canal_cima();
+    tv.desliga();
+    tv.liga();
+    tv.canal_baixo();
+    std::cout << tv << std::endl;    tv.canal_cima();
+    tv.canal_cima();
+    tv.liga();
+    tv.liga();
+    tv.canal_baixo();
+    tv.liga();
+    tv.canal_cima();
+    tv.canal_cima();
+    tv.canal_baixo();
+    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.canal_cima();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.canal_cima();
+    tv.canal_cima();
+    tv.liga();
+    tv.desliga();
+    tv.canal_cima();
+    tv.desliga();
+    std::cout << tv << std::endl;    tv.canal_cima();
+    tv.canal_baixo();
+    tv.canal_cima();
+    tv.liga();
+    tv.canal_cima();
+    tv.canal_baixo();
+    tv.desliga();
+    tv.desliga();
+    tv.canal_cima();
+    tv.desliga();
+    return 0;
+}
+deveria ser
+(desligada, 42)
+(desligada, 42)
+(ligada, 44)
+(ligada, 45)
+(ligada, 44)
+(ligada, 43)
+(ligada, 43)
+(ligada, 43)
+(ligada, 42)
+(ligada, 40)
+(ligada, 43)
+(desligada, 44)
+
+mas deu
+(desligada, 42)
+
+(desligada, 42)
+
+(ligada, 44)
+
+(ligada, 45)
+
+(ligada, 44)
+
+(ligada, 43)
+
+(ligada, 43)
+
+(ligada, 43)
+
+(ligada, 42)
+
+(ligada, 40)
+
+(ligada, 43)
+
+(desligada, 44)
+
+
+Teste 12 deu errado! +0.007
+O resultado para
+#include<iostream>
+int main() {
+    Televisao tv(true, 50);
+    std::cout << tv << std::endl; 
+    tv.canal_cima();
+    std::cout << tv << std::endl;
+    tv.canal_baixo();
+    std::cout << tv << std::endl;
+    tv.liga();
+    std::cout << tv << std::endl;
+    tv.canal_cima();
+    std::cout << tv << std::endl;
+    tv.canal_baixo();
+    std::cout << tv << std::endl;
+    tv.desliga();
+    std::cout << tv << std::endl;
+    return 0;
+}
+
+deveria ser
+(ligada, 50)
+(ligada, 51)
+(ligada, 50)
+(ligada, 50)
+(ligada, 51)
+(ligada, 50)
+(desligada, 50)
+
+mas deu
+(ligada, 50)
+
+(ligada, 51)
+
+(ligada, 50)
+
+(ligada, 50)
+
+(ligada, 51)
+
+(ligada, 50)
+
+(desligada, 50)
+
+
+Teste 13 deu errado! +0.008
+O resultado para
+#include<iostream>
+int main() {
+    Televisao tv(false, 31);
+    std::cout << tv << std::endl;    tv.canal_cima();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.desliga();
+    tv.canal_cima();
+    tv.canal_baixo();
+    std::cout << tv << std::endl;    tv.canal_cima();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    std::cout << tv << std::endl;    tv.desliga();
+    tv.desliga();
+    std::cout << tv << std::endl;    tv.liga();
+    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.canal_cima();
+    tv.desliga();
+    tv.canal_baixo();
+    tv.canal_cima();
+    tv.canal_baixo();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.liga();
+    tv.canal_cima();
+    tv.liga();
+    tv.desliga();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.desliga();
+    tv.canal_cima();
+    tv.canal_cima();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.canal_cima();
+    tv.canal_cima();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.canal_baixo();
+    std::cout << tv << std::endl;    tv.liga();
+    tv.desliga();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.canal_cima();
+    tv.desliga();
+    tv.desliga();
+    tv.desliga();
+    tv.liga();
+    tv.canal_baixo();
+    return 0;
+}
+deveria ser
+(desligada, 31)
+(desligada, 31)
+(desligada, 31)
+(desligada, 31)
+(desligada, 31)
+(desligada, 31)
+(ligada, 32)
+(desligada, 33)
+(desligada, 33)
+(desligada, 33)
+(desligada, 33)
+(desligada, 34)
+(desligada, 34)
+(desligada, 34)
+(desligada, 34)
+(desligada, 34)
+(desligada, 34)
+(desligada, 34)
+(desligada, 34)
+
+mas deu
+(desligada, 31)
+
+(desligada, 31)
+
+(desligada, 31)
+
+(desligada, 31)
+
+(desligada, 31)
+
+(desligada, 31)
+
+(ligada, 32)
+
+(desligada, 33)
+
+(desligada, 33)
+
+(desligada, 33)
+
+(desligada, 33)
+
+(desligada, 34)
+
+(desligada, 34)
+
+(desligada, 34)
+
+(desligada, 34)
+
+(desligada, 34)
+
+(desligada, 34)
+
+(desligada, 34)
+
+(desligada, 34)
+
+
+Teste 14 deu errado! +0.005
+O resultado para
+#include<iostream>
+int main() {
+    Televisao tv(false, 47);
+    tv.canal_cima();
+    tv.canal_baixo();
+    tv.desliga();
+    tv.canal_baixo();
+    tv.liga();
+    tv.canal_baixo();
+    tv.desliga();
+    tv.canal_baixo();
+    tv.desliga();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.liga();
+    std::cout << tv << std::endl;    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.liga();
+    tv.canal_cima();
+    tv.desliga();
+    tv.canal_cima();
+    tv.desliga();
+    std::cout << tv << std::endl;    tv.canal_cima();
+    tv.desliga();
+    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.canal_cima();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.liga();
+    tv.canal_baixo();
+    tv.desliga();
+    tv.desliga();
+    tv.canal_cima();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.canal_cima();
+    tv.desliga();
+    tv.liga();
+    tv.liga();
+    tv.liga();
+    tv.desliga();
+    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.desliga();
+    tv.canal_baixo();
+    std::cout << tv << std::endl;    tv.desliga();
+    tv.liga();
+    tv.canal_baixo();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.liga();
+    tv.canal_cima();
+    tv.desliga();
+    tv.canal_cima();
+    tv.desliga();
+    tv.canal_cima();
+    tv.desliga();
+    tv.liga();
+    tv.canal_cima();
+    return 0;
+}
+deveria ser
+(desligada, 46)
+(desligada, 46)
+(ligada, 46)
+(ligada, 47)
+(desligada, 48)
+(desligada, 48)
+(desligada, 47)
+(desligada, 47)
+(ligada, 46)
+(ligada, 46)
+
+mas deu
+(desligada, 46)
+
+(desligada, 46)
+
+(ligada, 46)
+
+(ligada, 47)
+
+(desligada, 48)
+
+(desligada, 48)
+
+(desligada, 47)
+
+(desligada, 47)
+
+(ligada, 46)
+
+(ligada, 46)
+
+
+Teste 15 deu errado! +0.013
+O resultado para
+#include<iostream>
+int main() {
+    Televisao tv(true, 62);
+    tv.liga();
+    tv.canal_cima();
+    tv.desliga();
+    tv.desliga();
+    tv.desliga();
+    tv.liga();
+    std::cout << tv << std::endl;    tv.liga();
+    tv.canal_cima();
+    tv.desliga();
+    tv.canal_baixo();
+    tv.desliga();
+    tv.canal_cima();
+    tv.canal_cima();
+    tv.desliga();
+    tv.canal_baixo();
+    tv.desliga();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.canal_cima();
+    tv.liga();
+    tv.canal_baixo();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.liga();
+    tv.canal_baixo();
+    tv.canal_cima();
+    tv.canal_cima();
+    tv.desliga();
+    tv.liga();
+    std::cout << tv << std::endl;    tv.desliga();
+    tv.liga();
+    tv.canal_cima();
+    tv.canal_cima();
+    tv.desliga();
+    tv.desliga();
+    tv.liga();
+    tv.canal_cima();
+    tv.liga();
+    tv.canal_baixo();
+    tv.desliga();
+    tv.desliga();
+    tv.canal_cima();
+    tv.canal_cima();
+    tv.desliga();
+    std::cout << tv << std::endl;    tv.canal_baixo();
+    tv.desliga();
+    tv.liga();
+    tv.liga();
+    tv.desliga();
+    tv.canal_cima();
+    tv.canal_baixo();
+    tv.desliga();
+    tv.canal_baixo();
+    tv.desliga();
+    tv.canal_cima();
+    tv.canal_cima();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    return 0;
+}
+deveria ser
+(ligada, 63)
+(desligada, 64)
+(desligada, 64)
+(ligada, 63)
+(ligada, 63)
+(ligada, 63)
+(ligada, 64)
+(desligada, 66)
+
+mas deu
+(ligada, 63)
+
+(desligada, 64)
+
+(desligada, 64)
+
+(ligada, 63)
+
+(ligada, 63)
+
+(ligada, 63)
+
+(ligada, 64)
+
+(desligada, 66)
+
+
+Teste 16 deu errado! +0.033
+O resultado para
+#include<iostream>
+int main() {
+    Televisao tv(true, 7);
+    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.liga();
+    tv.liga();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    std::cout << tv << std::endl;    tv.canal_baixo();
+    tv.desliga();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.desliga();
+    tv.desliga();
+    return 0;
+}
+deveria ser
+(ligada, 3)
+(desligada, 2)
+(desligada, 2)
+
+mas deu
+(ligada, 3)
+
+(desligada, 2)
+
+(desligada, 2)
+
+
+Teste 17 deu errado! +0.007
+O resultado para
+#include<iostream>
+int main() {
+    Televisao tv(true, 38);
+    tv.canal_baixo();
+    tv.desliga();
+    tv.canal_cima();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.canal_cima();
+    tv.canal_cima();
+    tv.liga();
+    std::cout << tv << std::endl;    tv.liga();
+    tv.canal_baixo();
+    tv.liga();
+    tv.desliga();
+    tv.canal_cima();
+    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.desliga();
+    tv.liga();
+    tv.canal_baixo();
+    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.canal_cima();
+    tv.canal_baixo();
+    tv.liga();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.canal_baixo();
+    tv.canal_cima();
+    tv.canal_cima();
+    tv.desliga();
+    tv.desliga();
+    std::cout << tv << std::endl;    tv.liga();
+    tv.liga();
+    tv.canal_cima();
+    tv.canal_cima();
+    tv.canal_cima();
+    tv.liga();
+    std::cout << tv << std::endl;    tv.canal_baixo();
+    tv.canal_cima();
+    tv.liga();
+    std::cout << tv << std::endl;    tv.desliga();
+    tv.liga();
+    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.liga();
+    tv.desliga();
+    tv.desliga();
+    tv.liga();
+    tv.canal_cima();
+    tv.desliga();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.desliga();
+    tv.desliga();
+    std::cout << tv << std::endl;    tv.canal_baixo();
+    tv.canal_cima();
+    tv.liga();
+    tv.liga();
+    std::cout << tv << std::endl;    tv.canal_cima();
+    tv.canal_baixo();
+    tv.desliga();
+    tv.desliga();
+    tv.canal_cima();
+    tv.canal_baixo();
+    tv.liga();
+    tv.desliga();
+    tv.liga();
+    std::cout << tv << std::endl;    return 0;
+}
+deveria ser
+(ligada, 37)
+(desligada, 36)
+(desligada, 36)
+(ligada, 36)
+(ligada, 36)
+(ligada, 36)
+(desligada, 37)
+(ligada, 40)
+(ligada, 40)
+(ligada, 41)
+(desligada, 42)
+(desligada, 42)
+(desligada, 42)
+(ligada, 42)
+(ligada, 42)
+
+mas deu
+(ligada, 37)
+
+(desligada, 36)
+
+(desligada, 36)
+
+(ligada, 36)
+
+(ligada, 36)
+
+(ligada, 36)
+
+(desligada, 37)
+
+(ligada, 40)
+
+(ligada, 40)
+
+(ligada, 41)
+
+(desligada, 42)
+
+(desligada, 42)
+
+(desligada, 42)
+
+(ligada, 42)
+
+(ligada, 42)
+
+
+Teste 18 deu errado! +0.015
+O resultado para
+#include<iostream>
+int main() {
+    Televisao tv(true, 19);
+    tv.liga();
+    tv.canal_baixo();
+    tv.canal_cima();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.liga();
+    tv.canal_baixo();
+    tv.desliga();
+    tv.canal_cima();
+    tv.liga();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.desliga();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    std::cout << tv << std::endl;    tv.canal_cima();
+    tv.canal_baixo();
+    tv.liga();
+    tv.liga();
+    tv.desliga();
+    std::cout << tv << std::endl;    tv.desliga();
+    tv.desliga();
+    tv.canal_cima();
+    tv.canal_cima();
+    tv.canal_cima();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.desliga();
+    tv.canal_baixo();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.liga();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.desliga();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.desliga();
+    tv.canal_cima();
+    tv.desliga();
+    tv.canal_cima();
+    tv.liga();
+    tv.canal_baixo();
+    tv.liga();
+    std::cout << tv << std::endl;    tv.liga();
+    tv.desliga();
+    tv.desliga();
+    tv.liga();
+    tv.liga();
+    tv.liga();
+    tv.canal_baixo();
+    tv.desliga();
+    tv.canal_cima();
+    tv.desliga();
+    tv.liga();
+    tv.canal_cima();
+    tv.canal_baixo();
+    tv.canal_cima();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.canal_cima();
+    tv.desliga();
+    tv.canal_cima();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.canal_baixo();
+    tv.liga();
+    tv.liga();
+    tv.liga();
+    tv.desliga();
+    std::cout << tv << std::endl;    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.liga();
+    tv.liga();
+    tv.desliga();
+    tv.canal_baixo();
+    std::cout << tv << std::endl;    tv.canal_cima();
+    tv.canal_cima();
+    tv.desliga();
+    tv.canal_cima();
+    tv.canal_cima();
+    tv.canal_cima();
+    tv.canal_baixo();
+    std::cout << tv << std::endl;    return 0;
+}
+deveria ser
+(desligada, 12)
+(desligada, 12)
+(desligada, 12)
+(desligada, 12)
+(desligada, 12)
+(desligada, 12)
+(ligada, 12)
+(ligada, 12)
+(desligada, 12)
+(desligada, 12)
+(desligada, 12)
+(ligada, 11)
+(desligada, 10)
+(desligada, 10)
+(desligada, 10)
+(desligada, 10)
+(desligada, 10)
+
+mas deu
+(desligada, 12)
+
+(desligada, 12)
+
+(desligada, 12)
+
+(desligada, 12)
+
+(desligada, 12)
+
+(desligada, 12)
+
+(ligada, 12)
+
+(ligada, 12)
+
+(desligada, 12)
+
+(desligada, 12)
+
+(desligada, 12)
+
+(ligada, 11)
+
+(desligada, 10)
+
+(desligada, 10)
+
+(desligada, 10)
+
+(desligada, 10)
+
+(desligada, 10)
+
+
+Teste 19 deu errado! +0.005
+O resultado para
+#include<iostream>
+int main() {
+    Televisao tv(true, 25);
+    tv.liga();
+    tv.canal_cima();
+    tv.canal_cima();
+    tv.canal_baixo();
+    tv.canal_cima();
+    tv.liga();
+    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.desliga();
+    tv.liga();
+    tv.canal_baixo();
+    tv.liga();
+    tv.desliga();
+    tv.desliga();
+    tv.desliga();
+    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.canal_cima();
+    tv.canal_baixo();
+    tv.desliga();
+    tv.canal_baixo();
+    tv.liga();
+    tv.liga();
+    tv.canal_baixo();
+    tv.liga();
+    tv.liga();
+    tv.desliga();
+    tv.liga();
+    std::cout << tv << std::endl;    tv.liga();
+    tv.liga();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    std::cout << tv << std::endl;    std::cout << tv << std::endl;    tv.desliga();
+    tv.desliga();
+    tv.desliga();
+    tv.desliga();
+    tv.canal_baixo();
+    tv.canal_cima();
+    tv.liga();
+    tv.liga();
+    tv.canal_cima();
+    tv.desliga();
+    tv.canal_cima();
+    tv.desliga();
+    tv.canal_baixo();
+    std::cout << tv << std::endl;    tv.liga();
+    tv.liga();
+    tv.desliga();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.liga();
+    std::cout << tv << std::endl;    tv.desliga();
+    std::cout << tv << std::endl;    tv.liga();
+    tv.desliga();
+    tv.canal_cima();
+    tv.liga();
+    tv.liga();
+    tv.canal_baixo();
+    std::cout << tv << std::endl;    tv.canal_baixo();
+    tv.canal_cima();
+    tv.canal_cima();
+    std::cout << tv << std::endl;    tv.canal_cima();
+    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.desliga();
+    tv.canal_cima();
+    tv.liga();
+    tv.liga();
+    tv.desliga();
+    return 0;
+}
+deveria ser
+(ligada, 28)
+(desligada, 27)
+(ligada, 26)
+(ligada, 24)
+(ligada, 24)
+(desligada, 25)
+(desligada, 25)
+(ligada, 25)
+(desligada, 25)
+(ligada, 24)
+(ligada, 25)
+
+mas deu
+(ligada, 28)
+
+(desligada, 27)
+
+(ligada, 26)
+
+(ligada, 24)
+
+(ligada, 24)
+
+(desligada, 25)
+
+(desligada, 25)
+
+(ligada, 25)
+
+(desligada, 25)
+
+(ligada, 24)
+
+(ligada, 25)
+
+
+Teste 20 deu errado! +0.020
+O resultado para
+#include<iostream>
+int main() {
+    Televisao tv(false, 93);
+    tv.desliga();
+    tv.liga();
+    std::cout << tv << std::endl;    tv.canal_baixo();
+    std::cout << tv << std::endl;    tv.desliga();
+    tv.desliga();
+    tv.canal_baixo();
+    tv.canal_cima();
+    tv.desliga();
+    std::cout << tv << std::endl;    tv.canal_baixo();
+    tv.canal_baixo();
+    tv.desliga();
+    tv.desliga();
+    std::cout << tv << std::endl;    tv.liga();
+    tv.desliga();
+    std::cout << tv << std::endl;    tv.canal_cima();
+    tv.liga();
+    return 0;
+}
+deveria ser
+(ligada, 93)
+(ligada, 92)
+(desligada, 92)
+(desligada, 92)
+(desligada, 92)
+
+mas deu
+(ligada, 93)
+
+(ligada, 92)
+
+(desligada, 92)
+
+(desligada, 92)
+
+(desligada, 92)
+
+
+Nota exercicio 1: 0.1
+Procurando exercício 2...
+Procurando exercício 3...
+Procurando exercício 4...
+Procurando exercício 5...
+Procurando exercício 6...
+Procurando exercício 7...
+Procurando exercício 8...
+Nota total: 0.10
+{"scores": {"ex1": 0.1, "ex2": 0.0, "ex3": 0.0, "ex4": 0.0, "ex5": 0.0, "ex6": 0.0, "ex7": 0.0, "ex8": 0.0}}
