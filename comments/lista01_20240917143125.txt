@@ -1,0 +1,354 @@
+tester.py:56: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+g++ (Ubuntu 13.2.0-23ubuntu4) 13.2.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Versão do G++:
+Varificando data de envio...
+PRAZO MÁXIMO: 2024-09-28T03:00:00-03:00
+Testando sua solucao...
+Procurando exercício 1...
+Exercício 1...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex1.cpp" 
+Teste 1: correto!
+Teste 2: correto!
+Teste 3: correto!
+Teste 4: correto!
+Teste 5: correto!
+Teste 6: correto!
+Teste 7: correto!
+Teste 8: correto!
+Teste 9: correto!
+Teste 10: correto!
+Teste 11: correto!
+Teste 12: correto!
+Teste 13: correto!
+Teste 14: correto!
+Teste 15: correto!
+Teste 16: correto!
+Teste 17: correto!
+Teste 18: correto!
+Teste 19: correto!
+Teste 20: correto!
+Nota exercicio 1: 0.5
+Procurando exercício 2...
+Exercício 2...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex2.cpp" 
+Teste 1: correto!
+Teste 2: correto!
+Teste 3: correto!
+Teste 4: correto!
+Teste 5: correto!
+Teste 6: correto!
+Teste 7: correto!
+Teste 8: correto!
+Teste 9: correto!
+Teste 10: correto!
+Teste 11: correto!
+Teste 12: correto!
+Teste 13: correto!
+Teste 14: correto!
+Teste 15: correto!
+Teste 16: correto!
+Teste 17: correto!
+Teste 18: correto!
+Teste 19: correto!
+Teste 20: correto!
+Nota exercicio 2: 0.5
+Procurando exercício 3...
+Exercício 3...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex3.cpp" 
+Teste 1: correto!
+Teste 2: correto!
+Teste 3: correto!
+Teste 4: correto!
+Teste 5: correto!
+Teste 6: correto!
+Teste 7: correto!
+Teste 8: correto!
+Teste 9: correto!
+Teste 10: correto!
+Teste 11: correto!
+Teste 12: correto!
+Teste 13: correto!
+Teste 14: correto!
+Teste 15: correto!
+Teste 16: correto!
+Teste 17: correto!
+Teste 18: correto!
+Teste 19: correto!
+Teste 20: correto!
+Nota exercicio 3: 0.5
+Procurando exercício 4...
+Exercício 4...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex4.cpp" 
+Teste 1: correto!
+Teste 2: correto!
+Teste 3: correto!
+Teste 4: correto!
+Teste 5: correto!
+Teste 6: correto!
+Teste 7: correto!
+Teste 8: correto!
+Teste 9: correto!
+Teste 10: correto!
+Teste 11: correto!
+Teste 12: correto!
+Teste 13: correto!
+Teste 14: correto!
+Teste 15: correto!
+Teste 16: correto!
+Teste 17: correto!
+Teste 18: correto!
+Teste 19: correto!
+Teste 20: correto!
+Nota exercicio 4: 0.5
+Procurando exercício 5...
+Procurando exercício 6...
+Exercício 6...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex6.cpp" 
+Teste 1: correto!
+Teste 2: correto!
+Teste 3: correto!
+Teste 4: correto!
+Teste 5: correto!
+Teste 6: correto!
+Teste 7: correto!
+Teste 8: correto!
+Teste 9: correto!
+Teste 10: correto!
+Teste 11: correto!
+Teste 12: correto!
+Teste 13: correto!
+Teste 14: correto!
+Teste 15: correto!
+Teste 16: correto!
+Teste 17: correto!
+Teste 18: correto!
+Teste 19: correto!
+Teste 20: correto!
+Nota exercicio 6: 1.0
+Procurando exercício 7...
+Procurando exercício 8...
+Procurando exercício 9...
+Exercício 9...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex9.cpp" 
+Teste 1: correto!
+Teste 2: correto!
+Teste 3: correto!
+Teste 4: correto!
+Teste 5: correto!
+Teste 6: correto!
+Teste 7: correto!
+Teste 8: correto!
+Teste 9: correto!
+Teste 10: correto!
+Teste 11: correto!
+Teste 12: correto!
+Teste 13: correto!
+Teste 14: correto!
+Teste 15: correto!
+Teste 16: correto!
+Teste 17: correto!
+Teste 18: correto!
+Teste 19: correto!
+Teste 20: correto!
+Nota exercicio 9: 1.0
+Procurando exercício 10...
+Procurando exercício 11...
+Exercício 11...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex11.cpp" 
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 250: ValueError - could not convert string to float: 'Nenhuma'
+Teste 1 deu errado!
+O resultado para
+-8.4
+-9.2
+-5.3
+
+deveria ser
+Nenhuma
+mas deu
+-1
+0k
+
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 250: ValueError - could not convert string to float: 'Nenhuma'
+Teste 2 deu errado!
+O resultado para
+-2.5
+7.0
+-10.0
+
+deveria ser
+Nenhuma
+mas deu
+1
+0k
+
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 250: ValueError - could not convert string to float: '-1\n0k'
+Teste 3 deu errado!
+O resultado para
+-4.6
+-4.8
+9.3
+
+deveria ser
+-2.036318560726118 e 0.9928402998565524
+mas deu
+-1
+0k
+
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 250: ValueError - could not convert string to float: 'Nenhuma'
+Teste 4 deu errado!
+O resultado para
+2.6
+-6.2
+5.2
+
+deveria ser
+Nenhuma
+mas deu
+1
+0k
+
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 250: ValueError - could not convert string to float: '0\n0k'
+Teste 5 deu errado!
+O resultado para
+1 -1 0
+deveria ser
+0 e 1
+mas deu
+0
+0k
+
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 250: ValueError - could not convert string to float: 'Nenhuma'
+Teste 6 deu errado!
+O resultado para
+0 0 7.2
+deveria ser
+Nenhuma
+mas deu
+-nan
+0k
+
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 250: ValueError - could not convert string to float: '-0\n0k'
+Teste 7 deu errado!
+O resultado para
+6.7
+3.3
+-0.4
+
+deveria ser
+-0.5931832626617749 e 0.10064594922893906
+mas deu
+-0
+0k
+
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 250: ValueError - could not convert string to float: 'Nenhuma'
+Teste 8 deu errado!
+O resultado para
+-9.8
+0.7
+-0.2
+
+deveria ser
+Nenhuma
+mas deu
+0
+0k
+
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 250: ValueError - could not convert string to float: '-inf\n0k'
+Teste 9 deu errado!
+O resultado para
+0 1 -2
+deveria ser
+2
+mas deu
+-inf
+0k
+
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 250: ValueError - could not convert string to float: '-1\n0k'
+Teste 10 deu errado!
+O resultado para
+1 2 1
+deveria ser
+-1
+mas deu
+-1
+0k
+
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 250: ValueError - could not convert string to float: '-0\n0k'
+Teste 11 deu errado!
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 250: ValueError - could not convert string to float: 'Nenhuma'
+Teste 12 deu errado!
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 250: ValueError - could not convert string to float: '-inf\n0k'
+Teste 13 deu errado!
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 250: ValueError - could not convert string to float: 'Nenhuma'
+Teste 14 deu errado!
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 250: ValueError - could not convert string to float: '1\n0k'
+Teste 15 deu errado!
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 250: ValueError - could not convert string to float: '0\n0k'
+Teste 16 deu errado!
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 250: ValueError - could not convert string to float: '0\n0k'
+Teste 17 deu errado!
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 250: ValueError - could not convert string to float: 'Nenhuma'
+Teste 18 deu errado!
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 250: ValueError - could not convert string to float: '1\n0k'
+Teste 19 deu errado!
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 250: ValueError - could not convert string to float: 'Infinitas'
+Teste 20 deu errado!
+Nota exercicio 11: 0.0
+Procurando exercício 12...
+Exercício 12...
+Compilando...
+g++ -O2 -Wno-unused-result -Wno-builtin-declaration-mismatch "ex12.cpp" 
+Teste 1: correto!
+Teste 2: correto!
+Teste 3: correto!
+Teste 4: correto!
+Teste 5: correto!
+Teste 6: correto!
+Teste 7: correto!
+Teste 8: correto!
+Teste 9: correto!
+Teste 10: correto!
+Teste 11: correto!
+Teste 12: correto!
+Teste 13: correto!
+Teste 14: correto!
+Teste 15: correto!
+Teste 16: correto!
+Teste 17: correto!
+Teste 18: correto!
+Teste 19: correto!
+Teste 20: correto!
+Nota exercicio 12: 1.0
+Nota total: 5.00
+{"scores": {"ex1": 0.5, "ex2": 0.5, "ex3": 0.5, "ex4": 0.5, "ex5": 0, "ex6": 1.0, "ex7": 0, "ex8": 0, "ex9": 1.0, "ex10": 0, "ex11": 0.0, "ex12": 1.0}}
