@@ -38,11 +38,11 @@ public:
 
         if(tv._ligada)
         {
-            out << "(ligada, "<<  tv._canal << ")" << std::endl;
+            out << "(ligada, "<<  tv._canal << ")" ;
         }
         else
         {
-            out << "(desligada, "<<  tv._canal << ")" << std::endl;
+            out << "(desligada, "<<  tv._canal << ")" ;
         }
         return out;
     }
