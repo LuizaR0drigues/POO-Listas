@@ -15,31 +15,7 @@ private:
         _denominador /= divisor;    
     };
 
-    long long int calculo_mdc(long long int a, long long int b ){
-        long long int resto = 0;
-        //printf(" MDC a %lld b %lld \n",a, b);
-        if( a <= 0)
-        {
-            return b;
-        }
-        if(b <= 0)
-        {
-            return a;
-        }
-        if(a == b)
-        {
-            //quando ambos forem iguais, o mdc será 
-            return a;
-        }
-        while(b != 0)
-        {
-                resto = a % b;
-                a = b;
-                b = resto;
-        }
-     //printf("Resto2 %lld \n", resto);
-       return a;
-    };
+    
 public:
     Fracao(long long int numerador = 0, long long int denominador = 1){//definindo os valores padroes
         _numerador = numerador;
@@ -86,6 +62,31 @@ public:
         os << f._numerador << '/' << f._denominador;
         return os;
     }
+    long long int calculo_mdc(long long int a, long long int b ){
+        long long int resto = 0;
+        //printf(" MDC a %lld b %lld \n",a, b);
+        if( a <= 0)
+        {
+            return b;
+        }
+        if(b <= 0)
+        {
+            return a;
+        }
+        if(a == b)
+        {
+            //quando ambos forem iguais, o mdc será 
+            return a;
+        }
+        while(b != 0)
+        {
+                resto = a % b;
+                a = b;
+                b = resto;
+        }
+     //printf("Resto2 %lld \n", resto);
+       return a;
+    };
     
 };
 
