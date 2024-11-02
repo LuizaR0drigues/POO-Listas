@@ -52,6 +52,7 @@ public:
   { 
       angulo = acos(prod_escalar/magnitude);
    }
+   angulo *= 57.2958;
    return angulo;
  };
  double abs()
@@ -62,7 +63,7 @@ public:
  };
  friend std::ostream& operator<<(std::ostream  &out, const Vetor &a){
 
-    out << "(" << a._x << ", " << a._y << ")";
+    out << "(" << a._x << "," << a._y << ")";
    return out;
  };
 
@@ -81,14 +82,14 @@ std::cout << v << std::endl;
 v = v-Vetor(1, 6);
 std::cout << v << std::endl;
 
-int a = v*Vetor(3, 2);
-std::cout << a << std::endl;
+v = v*Vetor(3, 2);
+std::cout << v << std::endl;
 
-double b = v^Vetor(-4501, 9002);
-std::cout << b << std::endl;
+v= v^Vetor(-4501, 9002);
+std::cout << v << std::endl;
 
 double c = v.abs();
-std::cout << c << std::endl;
+std::cout << v.abs() << std::endl;
 
 return 0;
 }
