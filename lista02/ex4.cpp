@@ -12,8 +12,8 @@ public:
         if(aux_a ==0)
         {
             aux_a = 1;
-            aux_b = rand() % 8;
-            aux_c = rand() % 2;
+            aux_b = rand() ;
+            aux_c = rand() ;
         }
         else{
             _a = aux_a;
@@ -32,21 +32,21 @@ public:
         if( delta  > 0)
         {
             
-            v[0] = 2;
+            v[0] = 2.0;
             v[1] = (-_b - delta) / 2 * _a;
             v[2] = (-_b + delta) / 2 * _a;
 
         }
         else if( delta == 0)
         {
-            v[0] = 1;
+            v[0] = 1.0;
             v[1] = (-_b + delta) / 2 * _a;
             v[2] = v[1];
 
 
         }
         else{
-           v[0] = 0;
+           v[0] = 0.0;
 
         }
         return v;
