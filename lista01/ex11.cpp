@@ -13,7 +13,7 @@ string raizes(double a, double b, double c) //ax² + bx + c = 0
      aux = pow(b, 2) - (4*a*c);
  
      discri = sqrt(discri);
-     
+     cout << discri << endl;
      if ( discri > 0)
      {
         raiz1 = (- b + discri) / (2*a);
@@ -21,10 +21,10 @@ string raizes(double a, double b, double c) //ax² + bx + c = 0
 
         if ( raiz1 > raiz2)
         {
-            printf("%.1f e %.1f\n", raiz2, raiz1);
+            printf("maior %.1f e %.1f\n", raiz2, raiz1);
         }
         else{
-            printf("%.1f e %.1f\n", raiz1, raiz2);
+            printf("Menor %.1f e %.1f\n", raiz1, raiz2);
         }
         
      }
@@ -34,7 +34,7 @@ string raizes(double a, double b, double c) //ax² + bx + c = 0
      }
      else{
         raiz1 = (- b + discri) / (2*a);
-        printf("%.f\n", raiz1);
+        printf("disc 0 %.f\n", raiz1);
 
      }
      
