@@ -12,8 +12,8 @@ public:
         if(aux_a ==0)
         {
             aux_a = 1;
-            aux_b = rand() ;
-            aux_c = rand() ;
+            aux_b = rand() %100 ;
+            aux_c = rand() % 100;
         }
         else{
             _a = aux_a;
