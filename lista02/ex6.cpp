@@ -295,6 +295,10 @@ public:
         return result;
     
    };
+   friend BigInt operator^(const BigInt& a, const BigInt& b)
+   {
+
+   };
 
    friend std::ostream& operator<<(std::ostream &out, const BigInt &a){
         for(int i=0; i<a._npartes; i++)
