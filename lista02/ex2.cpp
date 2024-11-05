@@ -43,16 +43,20 @@ private:
   
 public:
     Fracao(long long int numerador = 0, long long int denominador = 1){//definindo os valores padroes
+        if(denominador == 0)
+        {
+            _denominador == 1;
+        }
         _numerador = numerador;
         _denominador = denominador;
         reduz();
     };
-   Fracao(double x, double eps ){ //sobrecarga de construtores
+   /*Fracao(double x, double eps ){ //sobrecarga de construtores
         _numerador = x/eps;
         _denominador = 1/eps;
 
         this->reduz();
-    };
+    };*/
 
     friend Fracao operator+(const Fracao& a, const Fracao& b)
     {
@@ -102,20 +106,15 @@ public:
 };
 
 int main(){
-Fracao f;
-std::cout << f << " " << double(f) << '\n' ;
-f = f+Fracao(1LL, 2LL);
-std::cout << f << " " << double(f) << '\n' ;
-f = f+Fracao(1LL,2LL);
-std::cout << f << " " << double(f) << '\n' ;
-f = f*Fracao(3LL,2LL);
-std::cout << f << " " << double(f) << '\n' ;
-f = f/Fracao(3LL,4LL);
-std::cout << f << " " << double(f) << '\n' ;
-f = f-Fracao(1LL,6LL);
-std::cout << f << " " << double(f) << '\n' ;
-f = f*Fracao(0LL, 99999999999999LL);
-std::cout << f << " " << double(f) << '\n' ;
-
+ Fracao f(0.5925925925925926, 1e-10);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(61LL, 84LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(4LL, 53LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(-14LL, 65LL);
+    f = f + Fracao(-7LL, 2LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(58LL, 40LL);
     return 0;
 }
