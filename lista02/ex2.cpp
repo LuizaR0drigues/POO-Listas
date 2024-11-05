@@ -4,11 +4,12 @@
   static long long int calculo_mdc(long long int a, long long int b ){
         long long int resto = 0;
         //printf(" MDC a %lld b %lld \n",a, b);
-        if( a <= 0)
+
+        if( a == 0)
         {
             return b;
         }
-        if(b <= 0)
+         if(b == 0)
         {
             return a;
         }
@@ -22,8 +23,9 @@
                 resto = a % b;
                 a = b;
                 b = resto;
+                
         }
-     //printf("Resto2 %lld \n", resto);
+        //printf("Resto  %lld \n", resto);
        return a;
     }
 
@@ -38,25 +40,32 @@ private:
         long long int divisor = calculo_mdc(_numerador, _denominador);
         _numerador /= divisor;
         _denominador /= divisor;  
+         if(_denominador < 0)
+        {
+            _numerador = _numerador *-1;
+            _denominador = _denominador * -1;
+        }
+        else{
+        _numerador = _numerador;
+        _denominador = _denominador;
+        }
     };
 
   
 public:
     Fracao(long long int numerador = 0, long long int denominador = 1){//definindo os valores padroes
-        if(denominador == 0)
-        {
-            _denominador == 1;
-        }
+      
         _numerador = numerador;
         _denominador = denominador;
+        
         reduz();
     };
-   /*Fracao(double x, double eps ){ //sobrecarga de construtores
+   Fracao(double x, double eps ){ //sobrecarga de construtores
         _numerador = x/eps;
         _denominador = 1/eps;
 
         this->reduz();
-    };*/
+    };
 
     friend Fracao operator+(const Fracao& a, const Fracao& b)
     {
@@ -106,15 +115,32 @@ public:
 };
 
 int main(){
- Fracao f(0.5925925925925926, 1e-10);
+Fracao f(-5LL, 13LL);
+    f = f * Fracao(-34LL, 48LL);
+    f = f / Fracao(58LL, 56LL);
+    f = f * Fracao(-44LL, 85LL);
     std::cout << f << " " << double(f) << std::endl;
-    f = f / Fracao(61LL, 84LL);
+    f = f * Fracao(1LL, 44LL);
+    f = f + Fracao(-58LL, 95LL);
+    f = f / Fracao(1LL, 49LL);
+    f = f + Fracao(-75LL, 8LL);
     std::cout << f << " " << double(f) << std::endl;
-    f = f * Fracao(4LL, 53LL);
+    f = f + Fracao(1LL, 72LL);
+    f = f / Fracao(98LL, 2LL);
     std::cout << f << " " << double(f) << std::endl;
-    f = f / Fracao(-14LL, 65LL);
-    f = f + Fracao(-7LL, 2LL);
+    f = f / Fracao(58LL, 28LL);
+    f = f + Fracao(-77LL, 77LL);
+    f = f / Fracao(-46LL, 99LL);
+    f = f - Fracao(-92LL, 86LL);
     std::cout << f << " " << double(f) << std::endl;
-    f = f * Fracao(58LL, 40LL);
+    f = f + Fracao(28LL, 42LL);
+    f = f * Fracao(-18LL, 32LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(70LL, 92LL);
+    f = f + Fracao(-83LL, 22LL);
+    f = f / Fracao(86LL, 100LL);
+    f = f + Fracao(34LL, 83LL);
+    f = f - Fracao(21LL, 79LL);
+
     return 0;
 }
