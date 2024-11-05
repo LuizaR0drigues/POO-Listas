@@ -88,7 +88,14 @@ public:
         return static_cast<double>(_numerador) / _denominador;
     };
     friend std::ostream& operator<<(std::ostream &os, const Fracao &f) {
-        os << f._numerador << '/' << f._denominador;
+        if(f._numerador % f._denominador == 0)
+        {
+            os << f._numerador / f._denominador;
+        }
+        else
+        {
+            os << f._numerador << '/' << f._denominador;
+        }
         return os;
     }
     
