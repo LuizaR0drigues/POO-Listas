@@ -38,10 +38,9 @@ public:
     
     BigInt() //cria um vetor zerado
     {
-         _partes = new int[9];
-            for(int i=0; i<9; i++){
-                _partes[i] = 0;
-            }
+         _npartes = 1;
+         _partes = new int[_npartes];
+         _partes[_npartes] = 0;
     };
     BigInt(BigInt&& b) //passa a posse de b para a
     {
@@ -307,8 +306,54 @@ public:
         }
    };
 
+    friend BigInt operator^(const BigInt& a, const BigInt& b){
+        //b * a^b >= 0
+
+        if( b == 0)
+        {
+            return 1;
+        }
+        if( a == 0)
+        {
+            return 0;
+        }
+        BigInt aux;
+    
+        aux._partes[0] = 1;
+        while( b._partes > 0){
+            if(b._partes && 1 == 1)
+            {
+                for( int i=0; i< b._npartes; i++)
+                {
+                    aux._partes[i] = (aux._partes[i] *  a._partes[i]) - '0'; // aux = aux * a
+                }
+            }
+                for(int i=0; i< a._npartes; i++)
+                {
+                    a._partes[i] = (a._partes[i] * a._partes[i] ) - '0';
+                }
+                for(int i=0; i< b._npartes; i++)
+                {
+                    b._partes[i] = b._partes[i] - '0'; 
+                }
+                for(int i=0; i< b._npartes; i++)
+                {
+                    b._partes[i] = b._partes[i] >> 1; // b= b/2
+                }
+            
+        }
+
+        return aux;
+    };
+
+    friend std::ostream& operator<<(std::ostream &out, const BigInt &a){
+        for(int i=0; i< a._npartes; i++)
+        {
+            out << a._partes[i];
+        }
+
+        return out;
+    }
+
 };
 
-int main(){
-    return 0;
-}
