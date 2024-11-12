@@ -39,7 +39,9 @@ private:
     void reduz(){
         long long int divisor = calculo_mdc(_numerador, _denominador);
         _numerador /= divisor;
-        _denominador /= divisor;  
+        _denominador /= divisor;
+
+        //verificando se o dennominador é negativo  
          if(_denominador < 0)
         {
             _numerador = _numerador *-1;
@@ -91,6 +93,7 @@ public:
     };
     friend Fracao operator/(const Fracao& a, const Fracao& b)
     {
+        
         long long int aux_num, aux_den;
         aux_num = a._numerador * b._denominador;
         aux_den = a._denominador * b._numerador;
