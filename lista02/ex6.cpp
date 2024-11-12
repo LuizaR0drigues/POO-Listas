@@ -195,7 +195,8 @@ public:
         }
         return result;
     };
-    BigInt operator-(){
+    BigInt operator-() const
+    {
         BigInt aux; //cria uma copia em modulo
             aux._npartes = _npartes;
             aux._partes = new int(aux._npartes);
@@ -293,10 +294,6 @@ public:
         }
         return result;
     
-   };
-   friend BigInt operator^(const BigInt& a, const BigInt& b)
-   {
-
    };
 
    friend std::ostream& operator<<(std::ostream &out, const BigInt &a){
