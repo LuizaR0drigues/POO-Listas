@@ -105,12 +105,70 @@ public:
 class Q : public R
 {
 private:
-    int _numerador;
-    int _denominador;
+    long int _numerador;
+    long int _denominador;
+
+   long long int calculo_mdc(long long int a, long long int b ){
+        long long int resto = 0;
+        //printf(" MDC a %lld b %lld \n",a, b);
+
+        if( a == 0)
+        {
+            return b;
+        }
+         if(b == 0)
+        {
+            return a;
+        }
+        if(a == b)
+        {
+            //quando ambos forem iguais, o mdc será 
+            return a;
+        }
+        while(b != 0)
+        {
+                resto = a % b;
+                a = b;
+                b = resto;
+                
+        }
+        //printf("Resto  %lld \n", resto);
+       return a;
+    }
+    //funções responsáveis por reduzir a fração
+    void reduz(){
+        if(_numerador == 0)
+        {
+            _numerador = 0;
+            _denominador = 1;
+            return;
+        }
+        long long int divisor = calculo_mdc(_numerador, _denominador);
+        _numerador /= divisor;
+        _denominador /= divisor;
+
+        //verificando se o dennominador é negativo  
+         if(_denominador < 0)
+        {
+            _numerador = -_numerador ;
+            _denominador = -_denominador;
+        }
+        else{
+        _numerador = _numerador;
+        _denominador = _denominador;
+        }
+    };
+
 
 public:
     Q(int num = 0, int deno = 1) : R((double)num / deno), _numerador(num), _denominador(deno) {}
 
+    Q(const C& aux) : R(aux.parte_real()){
+        _numerador = aux.parte_real() * 1e8;
+        _denominador = 1e8;
+
+        reduz();
+    }
     std::ostream& imprimir(std::ostream& aux) const override
     {
         aux << _numerador;
@@ -153,13 +211,19 @@ public:
 };
 
 int main() {
-const int numObjetos = 5;
-C* objetos[numObjetos];
-objetos[0] = new C(3.5, 2.1);
-objetos[1] = new R(5.0);
-objetos[2] = new Q(1, 3);
-objetos[3] = new Z(10);
-objetos[4] = new N(10);
+const int numObjetos = 10;
+C** objetos = new C*[numObjetos];
+    
+    objetos[0] = new Q(-1909417435, 493896101);
+    objetos[1] = new R(6396.993119240255);
+    objetos[2] = new N(887949363);
+    objetos[3] = new R(5883.2574538601475);
+    objetos[4] = new Q(65842603, 1109934567);
+    objetos[5] = new N(2002046982);
+    objetos[6] = new Q(-943189666, 240165367);
+    objetos[7] = new Z(1148109497);
+    objetos[8] = new N(733437216);
+    objetos[9] = new Z(1368903048);
 
 for (int i = 0; i < numObjetos; ++i)
 std::cout << *objetos[i] << std::endl;
