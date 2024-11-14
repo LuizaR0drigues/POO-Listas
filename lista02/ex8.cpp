@@ -74,7 +74,7 @@ public:
 
     virtual std::ostream& imprimir(std::ostream& aux) const
     {
-        aux << _real  << " + " << _imag << "i";
+        aux << parte_real()  << " + " << parte_imag() << "i";
         
         return aux;
     };
