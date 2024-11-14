@@ -188,7 +188,7 @@ public:
             aux << "+" << parte_real();
         }
         else
-            aux << parte_imag;
+            aux << parte_imag();
        
         return aux;
     };
