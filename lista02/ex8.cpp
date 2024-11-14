@@ -190,9 +190,7 @@ public:
         if(this->parte_real() >0){
             aux << "+" << parte_real();
         }
-        else{
-            aux << "-" << parte_real();
-        }
+       
         return aux;
     };
 };
