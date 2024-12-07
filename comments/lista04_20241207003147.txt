@@ -1,0 +1,1957 @@
+Versão do G++:
+g++ (Debian 12.2.0-14) 12.2.0
+Copyright (C) 2022 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Varificando data de envio...
+AGORA: 2024-12-06 21:32:59.727834-03:00
+PRAZO MÁXIMO: 2024-12-17 23:59:59-03:06
+Testando sua solucao...
+Procurando exercício 1...
+Exercício 1...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex1.cpp" 
+#include<iostream>
+int main() {
+    std::stack<int> pilha;
+    for(int e=5; e>=1; e--)
+        pilha.push(e);
+    std::cout << elementok(pilha, 2) << std::endl;
+    while(not pilha.empty()) {
+        std::cout << pilha.top() << " ";
+        pilha.pop();
+    }
+    std::cout << std::endl;
+    return 0;
+}
+
+main -> veniam
+ERRO: Erro de compilação: 256
+ex1.cpp: In function ‘int main()’:
+ex1.cpp:51:18: error: ‘elementok’ was not declared in this scope; did you mean ‘elemenK’?
+   51 |     std::cout << elementok(pilha, 2) << std::endl;
+      |                  ^~~~~~~~~
+      |                  elemenK
+
+#include<iostream>
+int main() {
+    std::stack<int> p;
+    p.push(-358);
+    p.push(467);
+    p.push(-212);
+    p.push(962);
+    p.push(-222);
+    p.push(-746);
+    p.push(-586);
+    p.push(901);
+    p.push(348);
+    p.push(82);
+    p.push(-437);
+    p.push(-779);
+    p.push(65);
+    p.push(459);
+    p.push(-144);
+    p.push(-429);
+    p.push(748);
+    p.push(411);
+    p.push(116);
+    p.push(393);
+    p.push(-569);
+    p.push(-165);
+    p.push(206);
+    p.push(-210);
+    p.push(732);
+    p.push(5);
+    p.push(-42);
+    p.push(-666);
+    p.push(-926);
+    p.push(641);
+    p.push(607);
+    p.push(555);
+    p.push(-479);
+    p.push(-785);
+    p.push(596);
+    p.push(337);
+    p.push(-779);
+    p.push(-862);
+    p.push(470);
+    p.push(73);
+    p.push(-38);
+    p.push(243);
+    p.push(-922);
+    p.push(-575);
+    p.push(995);
+    p.push(593);
+    p.push(-828);
+    p.push(900);
+    p.push(451);
+    p.push(383);
+    p.push(371);
+    p.push(649);
+    p.push(831);
+    p.push(-868);
+    p.push(-301);
+    p.push(885);
+    p.push(667);
+    printf("%d\n", elementok(p, 35));
+    printf("%d\n", elementok(p, 78));
+    printf("%d\n", elementok(p, 64));
+    printf("%d\n", elementok(p, 13));
+    printf("%d\n", elementok(p, 76));
+    printf("%d\n", elementok(p, 68));
+    printf("%d\n", elementok(p, 61));
+    printf("%d\n", elementok(p, 45));
+    printf("%d\n", elementok(p, 30));
+    printf("%d\n", elementok(p, 43));
+    return 0;
+}
+main -> ipsam
+ERRO: Erro de compilação: 256
+ex1.cpp: In function ‘int main()’:
+ex1.cpp:106:20: error: ‘elementok’ was not declared in this scope; did you mean ‘elemenK’?
+  106 |     printf("%d\n", elementok(p, 35));
+      |                    ^~~~~~~~~
+      |                    elemenK
+
+#include<iostream>
+int main() {
+    std::stack<int> p;
+    p.push(420);
+    p.push(-633);
+    p.push(529);
+    p.push(-583);
+    p.push(870);
+    p.push(-389);
+    p.push(929);
+    p.push(982);
+    p.push(736);
+    p.push(85);
+    p.push(578);
+    p.push(90);
+    p.push(309);
+    p.push(354);
+    p.push(-22);
+    p.push(731);
+    p.push(-895);
+    p.push(-548);
+    p.push(-381);
+    p.push(478);
+    p.push(931);
+    p.push(742);
+    p.push(-798);
+    p.push(927);
+    p.push(-652);
+    p.push(653);
+    p.push(785);
+    p.push(149);
+    p.push(215);
+    p.push(437);
+    p.push(790);
+    p.push(-470);
+    p.push(394);
+    p.push(-649);
+    p.push(-956);
+    p.push(-524);
+    p.push(-940);
+    p.push(445);
+    p.push(881);
+    p.push(540);
+    p.push(72);
+    p.push(-807);
+    p.push(85);
+    p.push(-500);
+    p.push(-531);
+    p.push(-243);
+    p.push(-642);
+    p.push(-564);
+    p.push(-692);
+    p.push(-626);
+    p.push(171);
+    p.push(-981);
+    p.push(660);
+    p.push(192);
+    p.push(-919);
+    p.push(354);
+    p.push(-416);
+    p.push(247);
+    printf("%d\n", elementok(p, 34));
+    printf("%d\n", elementok(p, 94));
+    printf("%d\n", elementok(p, 60));
+    printf("%d\n", elementok(p, 84));
+    printf("%d\n", elementok(p, 16));
+    printf("%d\n", elementok(p, 4));
+    printf("%d\n", elementok(p, 82));
+    printf("%d\n", elementok(p, 23));
+    printf("%d\n", elementok(p, 85));
+    printf("%d\n", elementok(p, 33));
+    return 0;
+}
+main -> consequuntur
+ERRO: Erro de compilação: 256
+ex1.cpp: In function ‘int main()’:
+ex1.cpp:107:20: error: ‘elementok’ was not declared in this scope; did you mean ‘elemenK’?
+  107 |     printf("%d\n", elementok(p, 34));
+      |                    ^~~~~~~~~
+      |                    elemenK
+
+#include<iostream>
+int main() {
+    std::stack<int> p;
+    p.push(484);
+    p.push(152);
+    p.push(616);
+    p.push(-476);
+    p.push(-350);
+    p.push(-52);
+    p.push(30);
+    p.push(-232);
+    p.push(363);
+    p.push(224);
+    p.push(653);
+    p.push(-534);
+    p.push(602);
+    p.push(786);
+    p.push(505);
+    p.push(823);
+    p.push(364);
+    p.push(-914);
+    p.push(981);
+    p.push(354);
+    p.push(505);
+    p.push(97);
+    p.push(949);
+    p.push(-184);
+    p.push(423);
+    p.push(-443);
+    p.push(-412);
+    p.push(235);
+    p.push(-326);
+    p.push(-614);
+    p.push(-7);
+    p.push(-75);
+    p.push(-810);
+    p.push(-328);
+    p.push(183);
+    p.push(-680);
+    p.push(640);
+    p.push(679);
+    p.push(67);
+    p.push(-439);
+    p.push(616);
+    p.push(588);
+    p.push(-390);
+    p.push(-379);
+    p.push(-870);
+    p.push(183);
+    p.push(532);
+    p.push(-423);
+    p.push(-242);
+    p.push(26);
+    p.push(788);
+    p.push(-386);
+    printf("%d\n", elementok(p, 81));
+    printf("%d\n", elementok(p, 34));
+    printf("%d\n", elementok(p, 36));
+    printf("%d\n", elementok(p, 62));
+    printf("%d\n", elementok(p, 46));
+    printf("%d\n", elementok(p, 41));
+    printf("%d\n", elementok(p, 21));
+    printf("%d\n", elementok(p, 2));
+    printf("%d\n", elementok(p, 100));
+    printf("%d\n", elementok(p, 48));
+    return 0;
+}
+main -> ex
+ERRO: Erro de compilação: 256
+ex1.cpp: In function ‘int main()’:
+ex1.cpp:101:20: error: ‘elementok’ was not declared in this scope; did you mean ‘elemenK’?
+  101 |     printf("%d\n", elementok(p, 81));
+      |                    ^~~~~~~~~
+      |                    elemenK
+
+#include<iostream>
+int main() {
+    std::stack<int> p;
+    p.push(-492);
+    p.push(144);
+    p.push(941);
+    p.push(-416);
+    p.push(-671);
+    p.push(606);
+    p.push(-4);
+    p.push(591);
+    p.push(-540);
+    p.push(445);
+    p.push(147);
+    p.push(524);
+    p.push(-243);
+    p.push(-212);
+    p.push(169);
+    p.push(100);
+    p.push(-419);
+    p.push(519);
+    p.push(5);
+    p.push(-31);
+    p.push(311);
+    p.push(469);
+    p.push(-394);
+    p.push(332);
+    p.push(-361);
+    p.push(-831);
+    p.push(-863);
+    p.push(-897);
+    p.push(-42);
+    p.push(-505);
+    p.push(483);
+    p.push(-964);
+    p.push(746);
+    p.push(-631);
+    p.push(158);
+    p.push(-467);
+    p.push(-104);
+    p.push(-537);
+    p.push(576);
+    p.push(-211);
+    p.push(-219);
+    p.push(-470);
+    p.push(-214);
+    p.push(-617);
+    p.push(599);
+    p.push(-881);
+    p.push(809);
+    p.push(349);
+    p.push(-100);
+    p.push(332);
+    p.push(-197);
+    p.push(-830);
+    p.push(-503);
+    p.push(338);
+    p.push(435);
+    p.push(-786);
+    p.push(-563);
+    p.push(-552);
+    p.push(-790);
+    p.push(-105);
+    p.push(-585);
+    p.push(-717);
+    p.push(-738);
+    p.push(-116);
+    p.push(807);
+    p.push(207);
+    p.push(-881);
+    p.push(-291);
+    p.push(704);
+    p.push(966);
+    p.push(860);
+    p.push(665);
+    printf("%d\n", elementok(p, 77));
+    printf("%d\n", elementok(p, 10));
+    printf("%d\n", elementok(p, 30));
+    printf("%d\n", elementok(p, 33));
+    printf("%d\n", elementok(p, 57));
+    printf("%d\n", elementok(p, 48));
+    printf("%d\n", elementok(p, 69));
+    printf("%d\n", elementok(p, 94));
+    printf("%d\n", elementok(p, 93));
+    printf("%d\n", elementok(p, 20));
+    return 0;
+}
+main -> quasi
+ERRO: Erro de compilação: 256
+ex1.cpp: In function ‘int main()’:
+ex1.cpp:121:20: error: ‘elementok’ was not declared in this scope; did you mean ‘elemenK’?
+  121 |     printf("%d\n", elementok(p, 77));
+      |                    ^~~~~~~~~
+      |                    elemenK
+
+#include<iostream>
+int main() {
+    std::stack<int> p;
+    p.push(-572);
+    p.push(56);
+    p.push(-161);
+    p.push(982);
+    p.push(50);
+    p.push(-339);
+    p.push(192);
+    p.push(-47);
+    p.push(-94);
+    p.push(-263);
+    p.push(762);
+    p.push(157);
+    p.push(-131);
+    p.push(-513);
+    p.push(-302);
+    p.push(49);
+    p.push(757);
+    p.push(342);
+    p.push(-423);
+    p.push(243);
+    p.push(-959);
+    p.push(471);
+    p.push(145);
+    p.push(-558);
+    p.push(681);
+    p.push(722);
+    p.push(-106);
+    p.push(906);
+    p.push(549);
+    p.push(-714);
+    p.push(-357);
+    p.push(-882);
+    p.push(-460);
+    p.push(-957);
+    p.push(326);
+    p.push(-51);
+    p.push(-753);
+    p.push(-4);
+    p.push(699);
+    p.push(29);
+    p.push(443);
+    p.push(499);
+    p.push(-495);
+    p.push(753);
+    p.push(-882);
+    p.push(837);
+    p.push(-138);
+    p.push(709);
+    p.push(-444);
+    p.push(168);
+    p.push(484);
+    p.push(246);
+    p.push(918);
+    p.push(250);
+    p.push(-216);
+    p.push(817);
+    p.push(308);
+    p.push(-29);
+    p.push(835);
+    p.push(294);
+    p.push(646);
+    p.push(429);
+    p.push(-22);
+    p.push(-220);
+    p.push(740);
+    p.push(898);
+    p.push(678);
+    p.push(808);
+    p.push(801);
+    p.push(806);
+    p.push(550);
+    p.push(139);
+    p.push(703);
+    p.push(255);
+    p.push(785);
+    p.push(26);
+    p.push(-110);
+    p.push(806);
+    p.push(-364);
+    p.push(431);
+    p.push(146);
+    p.push(-958);
+    p.push(-302);
+    p.push(-951);
+    p.push(-473);
+    p.push(433);
+    p.push(-62);
+    p.push(499);
+    p.push(-287);
+    p.push(170);
+    printf("%d\n", elementok(p, 90));
+    printf("%d\n", elementok(p, 9));
+    printf("%d\n", elementok(p, 93));
+    printf("%d\n", elementok(p, 1));
+    printf("%d\n", elementok(p, 66));
+    printf("%d\n", elementok(p, 24));
+    printf("%d\n", elementok(p, 18));
+    printf("%d\n", elementok(p, 19));
+    printf("%d\n", elementok(p, 1));
+    printf("%d\n", elementok(p, 101));
+    return 0;
+}
+main -> consequatur
+ERRO: Erro de compilação: 256
+ex1.cpp: In function ‘int main()’:
+ex1.cpp:139:20: error: ‘elementok’ was not declared in this scope; did you mean ‘elemenK’?
+  139 |     printf("%d\n", elementok(p, 90));
+      |                    ^~~~~~~~~
+      |                    elemenK
+
+#include<iostream>
+int main() {
+    std::stack<int> p;
+    p.push(166);
+    p.push(479);
+    p.push(630);
+    p.push(315);
+    p.push(323);
+    p.push(-320);
+    p.push(-874);
+    p.push(-107);
+    p.push(-144);
+    p.push(-385);
+    p.push(-318);
+    p.push(-406);
+    p.push(-198);
+    p.push(600);
+    p.push(-805);
+    p.push(107);
+    p.push(-679);
+    p.push(798);
+    p.push(-80);
+    p.push(-424);
+    p.push(-809);
+    p.push(408);
+    p.push(-295);
+    p.push(-257);
+    p.push(-890);
+    p.push(532);
+    p.push(906);
+    p.push(-763);
+    p.push(-272);
+    p.push(-213);
+    p.push(-175);
+    p.push(943);
+    p.push(597);
+    p.push(-388);
+    p.push(443);
+    p.push(-131);
+    p.push(-506);
+    p.push(702);
+    p.push(726);
+    p.push(-483);
+    p.push(-135);
+    p.push(653);
+    p.push(-232);
+    p.push(-418);
+    p.push(981);
+    p.push(-373);
+    p.push(294);
+    p.push(4);
+    p.push(-821);
+    p.push(26);
+    p.push(805);
+    p.push(440);
+    p.push(977);
+    p.push(-686);
+    p.push(-60);
+    p.push(-801);
+    p.push(316);
+    p.push(-866);
+    p.push(-625);
+    p.push(740);
+    p.push(-594);
+    p.push(-392);
+    p.push(-365);
+    p.push(597);
+    p.push(-501);
+    p.push(177);
+    p.push(-466);
+    p.push(158);
+    p.push(-787);
+    printf("%d\n", elementok(p, 57));
+    printf("%d\n", elementok(p, 77));
+    printf("%d\n", elementok(p, 79));
+    printf("%d\n", elementok(p, 85));
+    printf("%d\n", elementok(p, 99));
+    printf("%d\n", elementok(p, 61));
+    printf("%d\n", elementok(p, 29));
+    printf("%d\n", elementok(p, 79));
+    printf("%d\n", elementok(p, 17));
+    printf("%d\n", elementok(p, 2));
+    return 0;
+}
+main -> pariatur
+ERRO: Erro de compilação: 256
+ex1.cpp: In function ‘int main()’:
+ex1.cpp:118:20: error: ‘elementok’ was not declared in this scope; did you mean ‘elemenK’?
+  118 |     printf("%d\n", elementok(p, 57));
+      |                    ^~~~~~~~~
+      |                    elemenK
+
+#include<iostream>
+int main() {
+    std::stack<int> p;
+    p.push(-598);
+    p.push(-650);
+    p.push(913);
+    p.push(577);
+    p.push(-536);
+    p.push(-607);
+    p.push(-575);
+    p.push(-900);
+    p.push(-603);
+    p.push(954);
+    p.push(594);
+    p.push(36);
+    p.push(-955);
+    p.push(3);
+    p.push(-825);
+    p.push(-13);
+    p.push(19);
+    p.push(485);
+    p.push(923);
+    p.push(103);
+    p.push(-284);
+    p.push(-839);
+    p.push(57);
+    p.push(-835);
+    p.push(-40);
+    p.push(-115);
+    p.push(-181);
+    p.push(-448);
+    p.push(971);
+    p.push(66);
+    p.push(769);
+    p.push(944);
+    p.push(-593);
+    p.push(282);
+    p.push(27);
+    p.push(520);
+    p.push(469);
+    p.push(-997);
+    p.push(298);
+    p.push(-703);
+    p.push(486);
+    p.push(-288);
+    p.push(-34);
+    p.push(948);
+    p.push(-721);
+    p.push(538);
+    p.push(-62);
+    p.push(-152);
+    p.push(-48);
+    p.push(155);
+    p.push(-950);
+    p.push(158);
+    p.push(512);
+    p.push(-578);
+    p.push(-227);
+    p.push(-870);
+    p.push(-312);
+    p.push(325);
+    p.push(-940);
+    p.push(576);
+    p.push(195);
+    p.push(-384);
+    p.push(626);
+    p.push(-677);
+    p.push(405);
+    p.push(865);
+    p.push(269);
+    p.push(937);
+    p.push(601);
+    p.push(253);
+    p.push(975);
+    p.push(-695);
+    p.push(-329);
+    p.push(-201);
+    p.push(-215);
+    printf("%d\n", elementok(p, 56));
+    printf("%d\n", elementok(p, 17));
+    printf("%d\n", elementok(p, 94));
+    printf("%d\n", elementok(p, 8));
+    printf("%d\n", elementok(p, 95));
+    printf("%d\n", elementok(p, 94));
+    printf("%d\n", elementok(p, 62));
+    printf("%d\n", elementok(p, 61));
+    printf("%d\n", elementok(p, 75));
+    printf("%d\n", elementok(p, 81));
+    return 0;
+}
+main -> quisquam
+ERRO: Erro de compilação: 256
+ex1.cpp: In function ‘int main()’:
+ex1.cpp:124:20: error: ‘elementok’ was not declared in this scope; did you mean ‘elemenK’?
+  124 |     printf("%d\n", elementok(p, 56));
+      |                    ^~~~~~~~~
+      |                    elemenK
+
+#include<iostream>
+int main() {
+    std::stack<int> p;
+    p.push(355);
+    p.push(-263);
+    p.push(-323);
+    p.push(158);
+    p.push(211);
+    p.push(889);
+    p.push(-863);
+    p.push(-105);
+    p.push(-110);
+    p.push(25);
+    p.push(-932);
+    p.push(348);
+    p.push(754);
+    p.push(859);
+    p.push(752);
+    p.push(-173);
+    p.push(-350);
+    p.push(-2);
+    p.push(347);
+    p.push(893);
+    p.push(781);
+    p.push(-102);
+    p.push(-493);
+    p.push(399);
+    p.push(393);
+    p.push(426);
+    p.push(-411);
+    p.push(673);
+    p.push(-147);
+    p.push(585);
+    p.push(545);
+    p.push(387);
+    p.push(-277);
+    p.push(480);
+    p.push(-444);
+    p.push(-333);
+    p.push(-469);
+    p.push(855);
+    p.push(-857);
+    p.push(509);
+    p.push(-485);
+    p.push(-687);
+    p.push(-164);
+    p.push(113);
+    p.push(665);
+    p.push(952);
+    p.push(657);
+    p.push(568);
+    p.push(493);
+    p.push(-756);
+    p.push(329);
+    p.push(116);
+    p.push(408);
+    p.push(718);
+    p.push(851);
+    p.push(-155);
+    p.push(915);
+    p.push(-95);
+    p.push(385);
+    p.push(929);
+    p.push(-412);
+    p.push(-778);
+    p.push(-834);
+    p.push(879);
+    p.push(266);
+    p.push(-477);
+    p.push(-796);
+    printf("%d\n", elementok(p, 100));
+    printf("%d\n", elementok(p, 75));
+    printf("%d\n", elementok(p, 44));
+    printf("%d\n", elementok(p, 65));
+    printf("%d\n", elementok(p, 58));
+    printf("%d\n", elementok(p, 44));
+    printf("%d\n", elementok(p, 10));
+    printf("%d\n", elementok(p, 84));
+    printf("%d\n", elementok(p, 88));
+    printf("%d\n", elementok(p, 97));
+    return 0;
+}
+main -> doloremque
+ERRO: Erro de compilação: 256
+ex1.cpp: In function ‘int main()’:
+ex1.cpp:116:20: error: ‘elementok’ was not declared in this scope; did you mean ‘elemenK’?
+  116 |     printf("%d\n", elementok(p, 100));
+      |                    ^~~~~~~~~
+      |                    elemenK
+
+#include<iostream>
+int main() {
+    std::stack<int> p;
+    p.push(782);
+    p.push(405);
+    p.push(-896);
+    p.push(-441);
+    p.push(-787);
+    p.push(-405);
+    p.push(128);
+    p.push(968);
+    p.push(-236);
+    p.push(847);
+    p.push(957);
+    p.push(-872);
+    p.push(-133);
+    p.push(-724);
+    p.push(390);
+    p.push(369);
+    p.push(-282);
+    p.push(660);
+    p.push(456);
+    p.push(-636);
+    p.push(680);
+    p.push(583);
+    p.push(-622);
+    p.push(473);
+    p.push(-992);
+    p.push(-383);
+    p.push(-554);
+    p.push(-153);
+    p.push(742);
+    p.push(841);
+    p.push(527);
+    p.push(-576);
+    p.push(-553);
+    p.push(489);
+    p.push(-220);
+    p.push(-758);
+    p.push(-182);
+    p.push(-911);
+    p.push(793);
+    p.push(-526);
+    p.push(229);
+    p.push(590);
+    p.push(351);
+    p.push(-649);
+    p.push(-503);
+    p.push(59);
+    p.push(-21);
+    p.push(-895);
+    p.push(-517);
+    p.push(-454);
+    p.push(-563);
+    p.push(108);
+    p.push(201);
+    p.push(-490);
+    p.push(-514);
+    p.push(540);
+    p.push(-381);
+    p.push(-816);
+    p.push(-924);
+    p.push(386);
+    p.push(-453);
+    p.push(111);
+    p.push(-479);
+    p.push(946);
+    p.push(-874);
+    p.push(973);
+    p.push(-303);
+    p.push(-933);
+    p.push(996);
+    p.push(517);
+    p.push(-589);
+    p.push(729);
+    p.push(-858);
+    p.push(183);
+    p.push(358);
+    p.push(15);
+    p.push(-61);
+    p.push(-35);
+    p.push(-585);
+    p.push(-926);
+    p.push(766);
+    p.push(-173);
+    p.push(-400);
+    p.push(223);
+    p.push(451);
+    p.push(-244);
+    p.push(-731);
+    p.push(-177);
+    p.push(688);
+    p.push(546);
+    p.push(-983);
+    p.push(-19);
+    p.push(-953);
+    p.push(-618);
+    p.push(-132);
+    p.push(-270);
+    p.push(-225);
+    p.push(308);
+    p.push(65);
+    printf("%d\n", elementok(p, 25));
+    printf("%d\n", elementok(p, 31));
+    printf("%d\n", elementok(p, 50));
+    printf("%d\n", elementok(p, 8));
+    printf("%d\n", elementok(p, 78));
+    printf("%d\n", elementok(p, 68));
+    printf("%d\n", elementok(p, 2));
+    printf("%d\n", elementok(p, 89));
+    printf("%d\n", elementok(p, 52));
+    printf("%d\n", elementok(p, 32));
+    return 0;
+}
+main -> quidem
+ERRO: Erro de compilação: 256
+ex1.cpp: In function ‘int main()’:
+ex1.cpp:148:20: error: ‘elementok’ was not declared in this scope; did you mean ‘elemenK’?
+  148 |     printf("%d\n", elementok(p, 25));
+      |                    ^~~~~~~~~
+      |                    elemenK
+
+#include<iostream>
+int main() {
+    std::stack<int> p;
+    p.push(164);
+    p.push(687);
+    p.push(-780);
+    p.push(95);
+    p.push(371);
+    p.push(-268);
+    p.push(326);
+    p.push(992);
+    p.push(869);
+    p.push(-465);
+    p.push(440);
+    p.push(-107);
+    p.push(-325);
+    p.push(-148);
+    p.push(-338);
+    p.push(-247);
+    p.push(-651);
+    p.push(-151);
+    p.push(-654);
+    p.push(386);
+    p.push(-260);
+    p.push(-304);
+    p.push(473);
+    p.push(-379);
+    p.push(855);
+    p.push(-537);
+    p.push(-719);
+    p.push(982);
+    p.push(325);
+    p.push(124);
+    p.push(-281);
+    p.push(649);
+    p.push(643);
+    p.push(821);
+    p.push(816);
+    p.push(79);
+    p.push(-651);
+    p.push(-88);
+    p.push(527);
+    p.push(-880);
+    p.push(-668);
+    p.push(143);
+    p.push(739);
+    p.push(996);
+    p.push(-292);
+    p.push(983);
+    p.push(-562);
+    p.push(154);
+    p.push(659);
+    p.push(-223);
+    p.push(6);
+    p.push(-20);
+    p.push(15);
+    p.push(714);
+    p.push(-71);
+    p.push(-418);
+    p.push(-635);
+    p.push(-717);
+    p.push(-736);
+    p.push(831);
+    p.push(726);
+    p.push(13);
+    p.push(-327);
+    p.push(-998);
+    p.push(1);
+    p.push(150);
+    p.push(-238);
+    p.push(99);
+    p.push(823);
+    p.push(-562);
+    p.push(386);
+    p.push(171);
+    p.push(374);
+    p.push(-448);
+    p.push(-16);
+    p.push(234);
+    p.push(-38);
+    p.push(-60);
+    p.push(799);
+    p.push(-480);
+    p.push(-211);
+    p.push(-664);
+    p.push(83);
+    p.push(-190);
+    p.push(-135);
+    p.push(956);
+    p.push(538);
+    printf("%d\n", elementok(p, 16));
+    printf("%d\n", elementok(p, 6));
+    printf("%d\n", elementok(p, 73));
+    printf("%d\n", elementok(p, 35));
+    printf("%d\n", elementok(p, 64));
+    printf("%d\n", elementok(p, 87));
+    printf("%d\n", elementok(p, 11));
+    printf("%d\n", elementok(p, 49));
+    printf("%d\n", elementok(p, 15));
+    printf("%d\n", elementok(p, 43));
+    return 0;
+}
+main -> error
+ERRO: Erro de compilação: 256
+ex1.cpp: In function ‘int main()’:
+ex1.cpp:136:20: error: ‘elementok’ was not declared in this scope; did you mean ‘elemenK’?
+  136 |     printf("%d\n", elementok(p, 16));
+      |                    ^~~~~~~~~
+      |                    elemenK
+
+#include<iostream>
+int main() {
+    std::stack<int> p;
+    p.push(-789);
+    p.push(471);
+    p.push(978);
+    p.push(299);
+    p.push(-963);
+    p.push(-31);
+    p.push(-998);
+    p.push(867);
+    p.push(-500);
+    p.push(405);
+    p.push(714);
+    p.push(1);
+    p.push(-332);
+    p.push(-605);
+    p.push(-804);
+    p.push(-491);
+    p.push(-996);
+    p.push(-65);
+    p.push(90);
+    p.push(4);
+    p.push(663);
+    p.push(-804);
+    p.push(990);
+    p.push(-126);
+    p.push(969);
+    p.push(-515);
+    p.push(-844);
+    p.push(-142);
+    p.push(-977);
+    p.push(-679);
+    p.push(953);
+    p.push(804);
+    p.push(944);
+    p.push(974);
+    p.push(54);
+    p.push(846);
+    p.push(444);
+    p.push(719);
+    p.push(323);
+    p.push(-220);
+    p.push(-867);
+    p.push(-203);
+    p.push(-833);
+    p.push(256);
+    p.push(788);
+    p.push(200);
+    p.push(-104);
+    p.push(-228);
+    p.push(265);
+    p.push(573);
+    p.push(156);
+    p.push(-638);
+    p.push(23);
+    p.push(727);
+    p.push(418);
+    p.push(22);
+    p.push(-565);
+    p.push(463);
+    p.push(-843);
+    p.push(-807);
+    p.push(883);
+    p.push(-364);
+    p.push(162);
+    p.push(-425);
+    p.push(-410);
+    p.push(916);
+    p.push(964);
+    p.push(-671);
+    p.push(773);
+    printf("%d\n", elementok(p, 25));
+    printf("%d\n", elementok(p, 65));
+    printf("%d\n", elementok(p, 83));
+    printf("%d\n", elementok(p, 34));
+    printf("%d\n", elementok(p, 90));
+    printf("%d\n", elementok(p, 87));
+    printf("%d\n", elementok(p, 11));
+    printf("%d\n", elementok(p, 22));
+    printf("%d\n", elementok(p, 43));
+    printf("%d\n", elementok(p, 8));
+    return 0;
+}
+main -> expedita
+ERRO: Erro de compilação: 256
+ex1.cpp: In function ‘int main()’:
+ex1.cpp:118:20: error: ‘elementok’ was not declared in this scope; did you mean ‘elemenK’?
+  118 |     printf("%d\n", elementok(p, 25));
+      |                    ^~~~~~~~~
+      |                    elemenK
+
+#include<iostream>
+int main() {
+    std::stack<int> p;
+    p.push(-685);
+    p.push(-260);
+    p.push(264);
+    p.push(-367);
+    p.push(649);
+    p.push(-27);
+    p.push(723);
+    p.push(-233);
+    p.push(-182);
+    p.push(458);
+    p.push(-475);
+    p.push(-515);
+    p.push(-710);
+    p.push(-42);
+    p.push(241);
+    p.push(467);
+    p.push(493);
+    p.push(-286);
+    p.push(-540);
+    p.push(-413);
+    p.push(792);
+    p.push(-512);
+    p.push(-225);
+    p.push(-610);
+    p.push(848);
+    p.push(-280);
+    p.push(707);
+    p.push(489);
+    p.push(-632);
+    p.push(-280);
+    p.push(-115);
+    p.push(260);
+    p.push(466);
+    p.push(955);
+    p.push(-953);
+    p.push(151);
+    p.push(373);
+    p.push(746);
+    p.push(-489);
+    p.push(-664);
+    p.push(-890);
+    p.push(-276);
+    p.push(846);
+    p.push(-585);
+    p.push(709);
+    p.push(451);
+    p.push(140);
+    p.push(773);
+    p.push(-16);
+    p.push(-879);
+    p.push(-654);
+    p.push(-118);
+    p.push(404);
+    p.push(-786);
+    p.push(77);
+    p.push(440);
+    p.push(993);
+    p.push(688);
+    p.push(470);
+    p.push(7);
+    p.push(86);
+    p.push(57);
+    p.push(966);
+    p.push(577);
+    p.push(627);
+    p.push(817);
+    p.push(-239);
+    p.push(-518);
+    p.push(-160);
+    p.push(-627);
+    p.push(491);
+    p.push(515);
+    p.push(662);
+    p.push(723);
+    p.push(777);
+    p.push(754);
+    p.push(-779);
+    p.push(210);
+    p.push(-793);
+    p.push(657);
+    p.push(-769);
+    p.push(305);
+    p.push(841);
+    p.push(270);
+    p.push(-515);
+    p.push(173);
+    p.push(-977);
+    p.push(-223);
+    p.push(-411);
+    p.push(395);
+    p.push(-38);
+    p.push(571);
+    p.push(340);
+    p.push(0);
+    p.push(-732);
+    p.push(-640);
+    p.push(479);
+    p.push(111);
+    printf("%d\n", elementok(p, 54));
+    printf("%d\n", elementok(p, 82));
+    printf("%d\n", elementok(p, 73));
+    printf("%d\n", elementok(p, 67));
+    printf("%d\n", elementok(p, 22));
+    printf("%d\n", elementok(p, 70));
+    printf("%d\n", elementok(p, 75));
+    printf("%d\n", elementok(p, 2));
+    printf("%d\n", elementok(p, 15));
+    printf("%d\n", elementok(p, 6));
+    return 0;
+}
+main -> commodi
+ERRO: Erro de compilação: 256
+ex1.cpp: In function ‘int main()’:
+ex1.cpp:147:20: error: ‘elementok’ was not declared in this scope; did you mean ‘elemenK’?
+  147 |     printf("%d\n", elementok(p, 54));
+      |                    ^~~~~~~~~
+      |                    elemenK
+
+#include<iostream>
+int main() {
+    std::stack<int> p;
+    p.push(758);
+    p.push(-109);
+    p.push(937);
+    p.push(-367);
+    p.push(-820);
+    p.push(-492);
+    p.push(852);
+    p.push(303);
+    p.push(959);
+    p.push(634);
+    p.push(-590);
+    p.push(407);
+    p.push(884);
+    p.push(-421);
+    p.push(-249);
+    p.push(401);
+    p.push(-825);
+    p.push(357);
+    p.push(224);
+    p.push(532);
+    p.push(-969);
+    p.push(-365);
+    p.push(172);
+    p.push(66);
+    p.push(-370);
+    p.push(-429);
+    p.push(-322);
+    p.push(44);
+    p.push(-73);
+    p.push(847);
+    p.push(-531);
+    p.push(-581);
+    p.push(123);
+    p.push(-86);
+    p.push(-488);
+    p.push(944);
+    p.push(597);
+    p.push(-592);
+    p.push(855);
+    p.push(-380);
+    p.push(202);
+    p.push(846);
+    p.push(-499);
+    p.push(727);
+    p.push(494);
+    p.push(-871);
+    p.push(-627);
+    p.push(717);
+    p.push(-272);
+    p.push(-166);
+    p.push(320);
+    p.push(-738);
+    p.push(-983);
+    p.push(55);
+    p.push(-451);
+    p.push(133);
+    p.push(398);
+    p.push(-314);
+    p.push(5);
+    p.push(743);
+    p.push(-960);
+    p.push(-23);
+    p.push(-962);
+    p.push(-412);
+    p.push(-391);
+    p.push(-283);
+    p.push(308);
+    p.push(-784);
+    p.push(260);
+    printf("%d\n", elementok(p, 62));
+    printf("%d\n", elementok(p, 83));
+    printf("%d\n", elementok(p, 40));
+    printf("%d\n", elementok(p, 93));
+    printf("%d\n", elementok(p, 11));
+    printf("%d\n", elementok(p, 31));
+    printf("%d\n", elementok(p, 1));
+    printf("%d\n", elementok(p, 37));
+    printf("%d\n", elementok(p, 86));
+    printf("%d\n", elementok(p, 49));
+    return 0;
+}
+main -> necessitatibus
+ERRO: Erro de compilação: 256
+ex1.cpp: In function ‘int main()’:
+ex1.cpp:118:20: error: ‘elementok’ was not declared in this scope; did you mean ‘elemenK’?
+  118 |     printf("%d\n", elementok(p, 62));
+      |                    ^~~~~~~~~
+      |                    elemenK
+
+#include<iostream>
+int main() {
+    std::stack<int> p;
+    p.push(-974);
+    p.push(60);
+    p.push(881);
+    p.push(-33);
+    p.push(-857);
+    p.push(-66);
+    p.push(-916);
+    p.push(408);
+    p.push(72);
+    p.push(-690);
+    p.push(494);
+    p.push(-370);
+    p.push(-954);
+    p.push(-755);
+    p.push(-81);
+    p.push(465);
+    p.push(-642);
+    p.push(392);
+    p.push(-545);
+    p.push(-279);
+    p.push(-14);
+    p.push(-135);
+    p.push(-268);
+    p.push(-880);
+    p.push(-553);
+    p.push(-754);
+    p.push(-474);
+    p.push(194);
+    p.push(-579);
+    p.push(920);
+    p.push(368);
+    p.push(-869);
+    p.push(138);
+    p.push(-61);
+    p.push(-198);
+    p.push(-680);
+    p.push(-193);
+    p.push(-695);
+    p.push(569);
+    p.push(-934);
+    p.push(373);
+    p.push(-144);
+    p.push(39);
+    p.push(444);
+    p.push(-225);
+    p.push(-641);
+    p.push(105);
+    p.push(-921);
+    p.push(-928);
+    p.push(860);
+    p.push(219);
+    p.push(-637);
+    p.push(-291);
+    p.push(-468);
+    p.push(-699);
+    p.push(686);
+    p.push(-876);
+    p.push(-302);
+    p.push(14);
+    p.push(-54);
+    p.push(4);
+    p.push(541);
+    p.push(-927);
+    p.push(10);
+    p.push(-269);
+    p.push(-634);
+    p.push(697);
+    p.push(915);
+    p.push(441);
+    p.push(830);
+    p.push(-744);
+    p.push(-738);
+    p.push(654);
+    p.push(-175);
+    p.push(690);
+    p.push(576);
+    p.push(809);
+    p.push(78);
+    p.push(-864);
+    p.push(116);
+    p.push(-951);
+    p.push(503);
+    p.push(-790);
+    p.push(142);
+    p.push(-102);
+    p.push(504);
+    p.push(217);
+    p.push(938);
+    p.push(267);
+    p.push(-393);
+    p.push(-617);
+    p.push(-969);
+    printf("%d\n", elementok(p, 81));
+    printf("%d\n", elementok(p, 47));
+    printf("%d\n", elementok(p, 34));
+    printf("%d\n", elementok(p, 16));
+    printf("%d\n", elementok(p, 40));
+    printf("%d\n", elementok(p, 69));
+    printf("%d\n", elementok(p, 16));
+    printf("%d\n", elementok(p, 54));
+    printf("%d\n", elementok(p, 30));
+    printf("%d\n", elementok(p, 87));
+    return 0;
+}
+main -> voluptatem
+ERRO: Erro de compilação: 256
+ex1.cpp: In function ‘int main()’:
+ex1.cpp:141:20: error: ‘elementok’ was not declared in this scope; did you mean ‘elemenK’?
+  141 |     printf("%d\n", elementok(p, 81));
+      |                    ^~~~~~~~~
+      |                    elemenK
+
+#include<iostream>
+int main() {
+    std::stack<int> p;
+    p.push(-84);
+    p.push(-184);
+    p.push(-438);
+    p.push(438);
+    p.push(108);
+    p.push(661);
+    p.push(-90);
+    p.push(703);
+    p.push(-243);
+    p.push(868);
+    p.push(-294);
+    p.push(672);
+    p.push(-806);
+    p.push(753);
+    p.push(-940);
+    p.push(-328);
+    p.push(-971);
+    p.push(993);
+    p.push(367);
+    p.push(475);
+    p.push(-116);
+    p.push(580);
+    p.push(216);
+    p.push(239);
+    p.push(-139);
+    p.push(604);
+    p.push(111);
+    p.push(529);
+    p.push(732);
+    p.push(912);
+    p.push(42);
+    p.push(604);
+    p.push(-707);
+    p.push(-708);
+    p.push(-687);
+    p.push(420);
+    p.push(511);
+    p.push(-821);
+    p.push(988);
+    p.push(26);
+    p.push(421);
+    p.push(-605);
+    p.push(606);
+    p.push(-276);
+    p.push(-759);
+    p.push(99);
+    p.push(429);
+    p.push(-948);
+    p.push(-635);
+    p.push(-562);
+    p.push(787);
+    p.push(384);
+    p.push(66);
+    p.push(631);
+    p.push(-477);
+    p.push(-55);
+    p.push(918);
+    p.push(-627);
+    p.push(937);
+    p.push(936);
+    p.push(-753);
+    p.push(-500);
+    p.push(-871);
+    p.push(-148);
+    p.push(165);
+    p.push(652);
+    p.push(524);
+    p.push(798);
+    p.push(-317);
+    p.push(816);
+    p.push(-657);
+    p.push(568);
+    p.push(-774);
+    p.push(488);
+    p.push(-229);
+    p.push(900);
+    p.push(-65);
+    p.push(-386);
+    p.push(473);
+    p.push(-721);
+    p.push(121);
+    p.push(2);
+    p.push(381);
+    p.push(273);
+    p.push(690);
+    p.push(-798);
+    p.push(55);
+    p.push(-310);
+    p.push(40);
+    p.push(581);
+    p.push(-358);
+    p.push(859);
+    p.push(-838);
+    p.push(-952);
+    printf("%d\n", elementok(p, 37));
+    printf("%d\n", elementok(p, 57));
+    printf("%d\n", elementok(p, 60));
+    printf("%d\n", elementok(p, 68));
+    printf("%d\n", elementok(p, 12));
+    printf("%d\n", elementok(p, 12));
+    printf("%d\n", elementok(p, 59));
+    printf("%d\n", elementok(p, 43));
+    printf("%d\n", elementok(p, 37));
+    printf("%d\n", elementok(p, 41));
+    return 0;
+}
+main -> harum
+ERRO: Erro de compilação: 256
+ex1.cpp: In function ‘int main()’:
+ex1.cpp:143:20: error: ‘elementok’ was not declared in this scope; did you mean ‘elemenK’?
+  143 |     printf("%d\n", elementok(p, 37));
+      |                    ^~~~~~~~~
+      |                    elemenK
+
+#include<iostream>
+int main() {
+    std::stack<int> p;
+    p.push(-520);
+    p.push(-660);
+    p.push(903);
+    p.push(924);
+    p.push(-480);
+    p.push(-156);
+    p.push(-413);
+    p.push(-609);
+    p.push(-987);
+    p.push(-775);
+    p.push(542);
+    p.push(-909);
+    p.push(968);
+    p.push(51);
+    p.push(122);
+    p.push(-997);
+    p.push(216);
+    p.push(-943);
+    p.push(894);
+    p.push(302);
+    p.push(122);
+    p.push(-51);
+    p.push(-969);
+    p.push(954);
+    p.push(257);
+    p.push(-487);
+    p.push(-604);
+    p.push(902);
+    p.push(-229);
+    p.push(46);
+    p.push(-171);
+    p.push(-505);
+    p.push(-982);
+    p.push(-240);
+    p.push(-704);
+    p.push(-825);
+    p.push(370);
+    p.push(-576);
+    p.push(227);
+    p.push(430);
+    p.push(-660);
+    p.push(843);
+    p.push(730);
+    p.push(-836);
+    p.push(772);
+    p.push(990);
+    p.push(759);
+    p.push(956);
+    p.push(229);
+    p.push(-43);
+    p.push(-908);
+    p.push(704);
+    p.push(-526);
+    p.push(447);
+    p.push(728);
+    p.push(79);
+    p.push(-17);
+    p.push(-665);
+    p.push(45);
+    p.push(-252);
+    p.push(-916);
+    p.push(-415);
+    p.push(-100);
+    p.push(676);
+    p.push(19);
+    p.push(-787);
+    printf("%d\n", elementok(p, 56));
+    printf("%d\n", elementok(p, 56));
+    printf("%d\n", elementok(p, 4));
+    printf("%d\n", elementok(p, 34));
+    printf("%d\n", elementok(p, 91));
+    printf("%d\n", elementok(p, 12));
+    printf("%d\n", elementok(p, 97));
+    printf("%d\n", elementok(p, 11));
+    printf("%d\n", elementok(p, 67));
+    printf("%d\n", elementok(p, 17));
+    return 0;
+}
+main -> rem
+ERRO: Erro de compilação: 256
+ex1.cpp: In function ‘int main()’:
+ex1.cpp:115:20: error: ‘elementok’ was not declared in this scope; did you mean ‘elemenK’?
+  115 |     printf("%d\n", elementok(p, 56));
+      |                    ^~~~~~~~~
+      |                    elemenK
+
+#include<iostream>
+int main() {
+    std::stack<int> p;
+    p.push(-972);
+    p.push(-786);
+    p.push(228);
+    p.push(116);
+    p.push(911);
+    p.push(132);
+    p.push(365);
+    p.push(-80);
+    p.push(909);
+    p.push(-948);
+    p.push(329);
+    p.push(90);
+    p.push(39);
+    p.push(583);
+    p.push(524);
+    p.push(-456);
+    p.push(246);
+    p.push(371);
+    p.push(23);
+    p.push(-345);
+    p.push(283);
+    p.push(145);
+    p.push(399);
+    p.push(-706);
+    p.push(541);
+    p.push(898);
+    p.push(-799);
+    p.push(-757);
+    p.push(920);
+    p.push(636);
+    p.push(212);
+    p.push(-715);
+    p.push(872);
+    p.push(-205);
+    p.push(935);
+    p.push(516);
+    p.push(285);
+    p.push(347);
+    p.push(232);
+    p.push(598);
+    p.push(915);
+    p.push(-225);
+    p.push(-91);
+    p.push(724);
+    p.push(-924);
+    p.push(425);
+    p.push(609);
+    p.push(894);
+    p.push(-844);
+    p.push(-349);
+    p.push(238);
+    p.push(-746);
+    p.push(-678);
+    p.push(189);
+    p.push(754);
+    p.push(676);
+    p.push(-363);
+    p.push(-173);
+    p.push(657);
+    p.push(-3);
+    p.push(509);
+    p.push(-923);
+    p.push(-119);
+    p.push(-22);
+    p.push(-678);
+    p.push(716);
+    printf("%d\n", elementok(p, 70));
+    printf("%d\n", elementok(p, 36));
+    printf("%d\n", elementok(p, 20));
+    printf("%d\n", elementok(p, 50));
+    printf("%d\n", elementok(p, 23));
+    printf("%d\n", elementok(p, 81));
+    printf("%d\n", elementok(p, 54));
+    printf("%d\n", elementok(p, 81));
+    printf("%d\n", elementok(p, 38));
+    printf("%d\n", elementok(p, 89));
+    return 0;
+}
+main -> inventore
+ERRO: Erro de compilação: 256
+ex1.cpp: In function ‘int main()’:
+ex1.cpp:115:20: error: ‘elementok’ was not declared in this scope; did you mean ‘elemenK’?
+  115 |     printf("%d\n", elementok(p, 70));
+      |                    ^~~~~~~~~
+      |                    elemenK
+
+#include<iostream>
+int main() {
+    std::stack<int> p;
+    p.push(983);
+    p.push(-933);
+    p.push(-590);
+    p.push(-142);
+    p.push(390);
+    p.push(-307);
+    p.push(-134);
+    p.push(291);
+    p.push(-949);
+    p.push(-42);
+    p.push(-43);
+    p.push(-953);
+    p.push(454);
+    p.push(-530);
+    p.push(76);
+    p.push(990);
+    p.push(727);
+    p.push(797);
+    p.push(407);
+    p.push(-75);
+    p.push(-296);
+    p.push(-520);
+    p.push(-558);
+    p.push(925);
+    p.push(492);
+    p.push(503);
+    p.push(977);
+    p.push(424);
+    p.push(-382);
+    p.push(397);
+    p.push(-797);
+    p.push(120);
+    p.push(991);
+    p.push(-205);
+    p.push(-290);
+    p.push(78);
+    p.push(-406);
+    p.push(-966);
+    p.push(-791);
+    p.push(498);
+    p.push(80);
+    p.push(82);
+    p.push(697);
+    p.push(970);
+    p.push(512);
+    p.push(203);
+    p.push(-654);
+    p.push(-871);
+    p.push(696);
+    p.push(338);
+    p.push(628);
+    p.push(228);
+    p.push(432);
+    p.push(-905);
+    p.push(-327);
+    p.push(-498);
+    p.push(-419);
+    p.push(-634);
+    p.push(426);
+    p.push(-650);
+    p.push(279);
+    p.push(496);
+    p.push(974);
+    p.push(54);
+    p.push(688);
+    p.push(-540);
+    p.push(-29);
+    p.push(141);
+    p.push(858);
+    p.push(788);
+    p.push(312);
+    p.push(332);
+    p.push(686);
+    p.push(-486);
+    p.push(-368);
+    p.push(373);
+    p.push(-307);
+    p.push(459);
+    p.push(460);
+    p.push(-866);
+    p.push(-576);
+    p.push(868);
+    p.push(-195);
+    p.push(865);
+    p.push(-319);
+    p.push(323);
+    p.push(-737);
+    p.push(-344);
+    p.push(-769);
+    p.push(695);
+    p.push(-293);
+    printf("%d\n", elementok(p, 97));
+    printf("%d\n", elementok(p, 17));
+    printf("%d\n", elementok(p, 26));
+    printf("%d\n", elementok(p, 63));
+    printf("%d\n", elementok(p, 77));
+    printf("%d\n", elementok(p, 88));
+    printf("%d\n", elementok(p, 12));
+    printf("%d\n", elementok(p, 88));
+    printf("%d\n", elementok(p, 56));
+    printf("%d\n", elementok(p, 98));
+    return 0;
+}
+main -> temporibus
+ERRO: Erro de compilação: 256
+ex1.cpp: In function ‘int main()’:
+ex1.cpp:140:20: error: ‘elementok’ was not declared in this scope; did you mean ‘elemenK’?
+  140 |     printf("%d\n", elementok(p, 97));
+      |                    ^~~~~~~~~
+      |                    elemenK
+
+#include<iostream>
+int main() {
+    std::stack<int> p;
+    p.push(-17);
+    p.push(-863);
+    p.push(-262);
+    p.push(476);
+    p.push(467);
+    p.push(508);
+    p.push(-438);
+    p.push(442);
+    p.push(-488);
+    p.push(-91);
+    p.push(-633);
+    p.push(766);
+    p.push(-879);
+    p.push(651);
+    p.push(-868);
+    p.push(805);
+    p.push(569);
+    p.push(-40);
+    p.push(893);
+    p.push(81);
+    p.push(732);
+    p.push(-619);
+    p.push(155);
+    p.push(-868);
+    p.push(21);
+    p.push(-707);
+    p.push(-858);
+    p.push(443);
+    p.push(297);
+    p.push(-422);
+    p.push(-740);
+    p.push(-478);
+    p.push(777);
+    p.push(-22);
+    p.push(632);
+    p.push(-20);
+    p.push(-636);
+    p.push(61);
+    p.push(310);
+    p.push(-545);
+    p.push(514);
+    p.push(293);
+    p.push(392);
+    p.push(635);
+    p.push(517);
+    p.push(235);
+    p.push(561);
+    p.push(687);
+    p.push(246);
+    p.push(828);
+    p.push(135);
+    p.push(-630);
+    p.push(575);
+    p.push(44);
+    p.push(-749);
+    p.push(-358);
+    p.push(-934);
+    p.push(-314);
+    p.push(856);
+    p.push(-217);
+    p.push(-517);
+    p.push(-496);
+    p.push(929);
+    p.push(186);
+    p.push(-106);
+    p.push(888);
+    p.push(-646);
+    p.push(563);
+    p.push(658);
+    p.push(-712);
+    p.push(-25);
+    p.push(-812);
+    p.push(767);
+    p.push(827);
+    p.push(5);
+    p.push(690);
+    p.push(952);
+    p.push(-38);
+    p.push(-155);
+    p.push(-377);
+    p.push(-559);
+    p.push(900);
+    p.push(458);
+    p.push(58);
+    p.push(-480);
+    p.push(535);
+    p.push(-720);
+    p.push(564);
+    p.push(-508);
+    p.push(-342);
+    p.push(794);
+    p.push(6);
+    p.push(-547);
+    p.push(772);
+    p.push(-414);
+    p.push(-844);
+    p.push(281);
+    p.push(-593);
+    printf("%d\n", elementok(p, 65));
+    printf("%d\n", elementok(p, 66));
+    printf("%d\n", elementok(p, 34));
+    printf("%d\n", elementok(p, 75));
+    printf("%d\n", elementok(p, 76));
+    printf("%d\n", elementok(p, 78));
+    printf("%d\n", elementok(p, 20));
+    printf("%d\n", elementok(p, 48));
+    printf("%d\n", elementok(p, 76));
+    printf("%d\n", elementok(p, 2));
+    return 0;
+}
+main -> impedit
+ERRO: Erro de compilação: 256
+ex1.cpp: In function ‘int main()’:
+ex1.cpp:147:20: error: ‘elementok’ was not declared in this scope; did you mean ‘elemenK’?
+  147 |     printf("%d\n", elementok(p, 65));
+      |                    ^~~~~~~~~
+      |                    elemenK
+
+Nota exercicio 1: 0.0
+Procurando exercício 2...
+Procurando exercício 3...
+Procurando exercício 4...
+Procurando exercício 5...
+Procurando exercício 6...
+Procurando exercício 7...
+Procurando exercício 8...
+Procurando exercício 9...
+Procurando exercício 10...
+Procurando exercício 11...
+Nota total: 0.00
+{"scores": {"ex1": 0.0, "ex2": 0.0, "ex3": 0.0, "ex4": 0.0, "ex5": 0.0, "ex6": 0.0, "ex7": 0.0, "ex8": 0.0, "ex9": 0.0, "ex10": 0.0, "ex11": 0.0}}
