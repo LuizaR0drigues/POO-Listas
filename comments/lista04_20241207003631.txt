@@ -1,0 +1,647 @@
+Versão do G++:
+g++ (Debian 12.2.0-14) 12.2.0
+Copyright (C) 2022 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Varificando data de envio...
+AGORA: 2024-12-06 21:37:43.783213-03:00
+PRAZO MÁXIMO: 2024-12-17 23:59:59-03:06
+Testando sua solucao...
+Procurando exercício 1...
+Exercício 1...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex1.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    std::stack<int> p;
+    p.push(121);
+    p.push(226);
+    p.push(660);
+    p.push(908);
+    p.push(666);
+    p.push(-773);
+    p.push(-7);
+    p.push(391);
+    p.push(-548);
+    p.push(181);
+    p.push(50);
+    p.push(104);
+    p.push(403);
+    p.push(-742);
+    p.push(371);
+    p.push(88);
+    p.push(-150);
+    p.push(53);
+    p.push(434);
+    p.push(-6);
+    p.push(332);
+    p.push(380);
+    p.push(809);
+    p.push(-672);
+    p.push(404);
+    p.push(-272);
+    p.push(-865);
+    p.push(-149);
+    p.push(34);
+    p.push(-439);
+    p.push(251);
+    p.push(616);
+    p.push(-410);
+    p.push(399);
+    p.push(695);
+    p.push(194);
+    p.push(-34);
+    p.push(974);
+    p.push(-472);
+    p.push(582);
+    p.push(707);
+    p.push(238);
+    p.push(392);
+    p.push(-965);
+    p.push(-131);
+    p.push(-67);
+    p.push(670);
+    p.push(-478);
+    p.push(11);
+    p.push(306);
+    p.push(18);
+    p.push(-384);
+    printf("%d\n", elementok(p, 34));
+    printf("%d\n", elementok(p, 3));
+    printf("%d\n", elementok(p, 22));
+    printf("%d\n", elementok(p, 92));
+    printf("%d\n", elementok(p, 49));
+    printf("%d\n", elementok(p, 35));
+    printf("%d\n", elementok(p, 92));
+    printf("%d\n", elementok(p, 7));
+    printf("%d\n", elementok(p, 101));
+    printf("%d\n", elementok(p, 57));
+    return 0;
+}
+deveria ser
+-1
+306
+434
+-1
+-1
+-1
+-1
+238
+-1
+-1
+
+mas deu
+0
+306
+434
+0
+0
+0
+0
+238
+0
+0
+
+Teste 4 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    std::stack<int> p;
+    p.push(-584);
+    p.push(984);
+    p.push(766);
+    p.push(530);
+    p.push(572);
+    p.push(250);
+    p.push(-374);
+    p.push(-863);
+    p.push(-168);
+    p.push(-180);
+    p.push(751);
+    p.push(-835);
+    p.push(-730);
+    p.push(-198);
+    p.push(952);
+    p.push(312);
+    p.push(783);
+    p.push(-139);
+    p.push(-978);
+    p.push(304);
+    p.push(128);
+    p.push(745);
+    p.push(-839);
+    p.push(-467);
+    p.push(-971);
+    p.push(410);
+    p.push(387);
+    p.push(-198);
+    p.push(669);
+    p.push(940);
+    p.push(548);
+    p.push(798);
+    p.push(319);
+    p.push(497);
+    p.push(618);
+    p.push(170);
+    p.push(-132);
+    p.push(-978);
+    p.push(-340);
+    p.push(84);
+    p.push(-727);
+    p.push(568);
+    p.push(212);
+    p.push(747);
+    p.push(-283);
+    p.push(-368);
+    p.push(-159);
+    p.push(763);
+    p.push(-971);
+    p.push(160);
+    p.push(230);
+    printf("%d\n", elementok(p, 78));
+    printf("%d\n", elementok(p, 58));
+    printf("%d\n", elementok(p, 87));
+    printf("%d\n", elementok(p, 19));
+    printf("%d\n", elementok(p, 29));
+    printf("%d\n", elementok(p, 85));
+    printf("%d\n", elementok(p, 48));
+    printf("%d\n", elementok(p, 63));
+    printf("%d\n", elementok(p, 30));
+    printf("%d\n", elementok(p, 44));
+    return 0;
+}
+deveria ser
+-1
+-1
+-1
+-978
+530
+-1
+-1
+-1
+766
+-1
+
+mas deu
+0
+0
+0
+-978
+530
+0
+0
+0
+766
+0
+
+Teste 5 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    std::stack<int> p;
+    p.push(-890);
+    p.push(-948);
+    p.push(-950);
+    p.push(-732);
+    p.push(309);
+    p.push(448);
+    p.push(234);
+    p.push(-306);
+    p.push(370);
+    p.push(-346);
+    p.push(723);
+    p.push(-944);
+    p.push(392);
+    p.push(210);
+    p.push(-973);
+    p.push(-6);
+    p.push(568);
+    p.push(-839);
+    p.push(-552);
+    p.push(503);
+    p.push(-313);
+    p.push(-61);
+    p.push(-543);
+    p.push(662);
+    p.push(-447);
+    p.push(-226);
+    p.push(302);
+    p.push(177);
+    p.push(-664);
+    p.push(-697);
+    p.push(285);
+    p.push(-240);
+    p.push(37);
+    p.push(821);
+    p.push(-98);
+    p.push(-51);
+    p.push(-642);
+    p.push(-256);
+    p.push(179);
+    p.push(-752);
+    p.push(-503);
+    p.push(-713);
+    p.push(-223);
+    p.push(794);
+    p.push(216);
+    p.push(-68);
+    p.push(-888);
+    p.push(-574);
+    p.push(-788);
+    p.push(723);
+    p.push(44);
+    p.push(-460);
+    p.push(364);
+    p.push(-23);
+    p.push(-249);
+    p.push(-146);
+    p.push(183);
+    p.push(-958);
+    p.push(662);
+    p.push(547);
+    p.push(-974);
+    p.push(706);
+    p.push(-759);
+    p.push(695);
+    p.push(513);
+    p.push(475);
+    p.push(-914);
+    p.push(309);
+    p.push(404);
+    p.push(-145);
+    p.push(40);
+    p.push(-191);
+    p.push(-93);
+    p.push(567);
+    p.push(937);
+    p.push(491);
+    p.push(721);
+    p.push(625);
+    printf("%d\n", elementok(p, 16));
+    printf("%d\n", elementok(p, 33));
+    printf("%d\n", elementok(p, 59));
+    printf("%d\n", elementok(p, 81));
+    printf("%d\n", elementok(p, 73));
+    printf("%d\n", elementok(p, 40));
+    printf("%d\n", elementok(p, 5));
+    printf("%d\n", elementok(p, 87));
+    printf("%d\n", elementok(p, 52));
+    printf("%d\n", elementok(p, 15));
+    return 0;
+}
+deveria ser
+216
+-346
+-1
+-1
+-1
+-948
+-974
+-1
+-1
+-68
+
+mas deu
+216
+-346
+0
+0
+0
+-948
+-974
+0
+0
+-68
+
+Teste 6 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    std::stack<int> p;
+    p.push(207);
+    p.push(134);
+    p.push(544);
+    p.push(-898);
+    p.push(241);
+    p.push(639);
+    p.push(1);
+    p.push(-276);
+    p.push(-279);
+    p.push(505);
+    p.push(914);
+    p.push(730);
+    p.push(901);
+    p.push(418);
+    p.push(589);
+    p.push(606);
+    p.push(822);
+    p.push(415);
+    p.push(214);
+    p.push(-704);
+    p.push(-270);
+    p.push(-272);
+    p.push(-544);
+    p.push(878);
+    p.push(-354);
+    p.push(-433);
+    p.push(265);
+    p.push(-495);
+    p.push(806);
+    p.push(231);
+    p.push(695);
+    p.push(309);
+    p.push(588);
+    p.push(-881);
+    p.push(-245);
+    p.push(83);
+    p.push(37);
+    p.push(-113);
+    p.push(835);
+    p.push(-806);
+    p.push(384);
+    p.push(181);
+    p.push(477);
+    p.push(-600);
+    p.push(-422);
+    p.push(-546);
+    p.push(830);
+    p.push(-728);
+    p.push(-95);
+    p.push(-516);
+    p.push(376);
+    p.push(-353);
+    p.push(-517);
+    printf("%d\n", elementok(p, 2));
+    printf("%d\n", elementok(p, 30));
+    printf("%d\n", elementok(p, 51));
+    printf("%d\n", elementok(p, 45));
+    printf("%d\n", elementok(p, 12));
+    printf("%d\n", elementok(p, 47));
+    printf("%d\n", elementok(p, 12));
+    printf("%d\n", elementok(p, 32));
+    printf("%d\n", elementok(p, 21));
+    printf("%d\n", elementok(p, 95));
+    return 0;
+}
+deveria ser
+-516
+-1
+-1
+-1
+-354
+-1
+-354
+-1
+418
+-1
+
+mas deu
+-516
+0
+0
+0
+-354
+0
+-354
+0
+418
+0
+
+Teste 7: correto! +0.050
+Teste 8 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    std::stack<int> p;
+    p.push(172);
+    p.push(157);
+    p.push(415);
+    p.push(-358);
+    p.push(520);
+    p.push(9);
+    p.push(377);
+    p.push(426);
+    p.push(-68);
+    p.push(-476);
+    p.push(832);
+    p.push(941);
+    p.push(-147);
+    p.push(233);
+    p.push(661);
+    p.push(-435);
+    p.push(345);
+    p.push(715);
+    p.push(-920);
+    p.push(-151);
+    p.push(89);
+    p.push(257);
+    p.push(-877);
+    p.push(-913);
+    p.push(-125);
+    p.push(-34);
+    p.push(-443);
+    p.push(-326);
+    p.push(-689);
+    p.push(-920);
+    p.push(-436);
+    p.push(-45);
+    p.push(16);
+    p.push(754);
+    p.push(-324);
+    p.push(-636);
+    p.push(703);
+    p.push(-998);
+    p.push(-401);
+    p.push(-107);
+    p.push(-18);
+    p.push(904);
+    p.push(-775);
+    p.push(91);
+    p.push(-976);
+    p.push(819);
+    p.push(-385);
+    p.push(153);
+    p.push(-905);
+    p.push(-687);
+    p.push(802);
+    p.push(757);
+    p.push(-88);
+    p.push(268);
+    p.push(-14);
+    p.push(180);
+    p.push(967);
+    p.push(-85);
+    p.push(1000);
+    p.push(-723);
+    p.push(-559);
+    p.push(-887);
+    p.push(254);
+    p.push(109);
+    p.push(-90);
+    p.push(-430);
+    p.push(-9);
+    p.push(-292);
+    p.push(-225);
+    p.push(697);
+    p.push(-829);
+    p.push(46);
+    p.push(680);
+    printf("%d\n", elementok(p, 46));
+    printf("%d\n", elementok(p, 63));
+    printf("%d\n", elementok(p, 47));
+    printf("%d\n", elementok(p, 26));
+    printf("%d\n", elementok(p, 7));
+    printf("%d\n", elementok(p, 80));
+    printf("%d\n", elementok(p, 72));
+    printf("%d\n", elementok(p, 25));
+    printf("%d\n", elementok(p, 48));
+    printf("%d\n", elementok(p, 20));
+    return 0;
+}
+deveria ser
+-1
+-1
+-1
+832
+1000
+-1
+-1
+-920
+-1
+16
+
+mas deu
+0
+0
+0
+832
+1000
+0
+0
+-920
+0
+16
+
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    std::stack<int> p;
+    p.push(217);
+    p.push(-296);
+    p.push(449);
+    p.push(121);
+    p.push(680);
+    p.push(567);
+    p.push(-998);
+    p.push(-648);
+    p.push(554);
+    p.push(-860);
+    p.push(-276);
+    p.push(-222);
+    p.push(969);
+    p.push(715);
+    p.push(618);
+    p.push(242);
+    p.push(-693);
+    p.push(-80);
+    p.push(640);
+    p.push(348);
+    p.push(-7);
+    p.push(529);
+    p.push(-641);
+    p.push(701);
+    p.push(207);
+    p.push(152);
+    p.push(487);
+    p.push(-102);
+    p.push(-309);
+    p.push(534);
+    p.push(-928);
+    p.push(-209);
+    p.push(540);
+    p.push(-727);
+    p.push(307);
+    p.push(490);
+    p.push(420);
+    p.push(95);
+    p.push(-486);
+    p.push(561);
+    p.push(598);
+    p.push(-543);
+    p.push(-784);
+    p.push(-426);
+    p.push(729);
+    p.push(432);
+    p.push(-752);
+    p.push(-827);
+    p.push(608);
+    p.push(543);
+    p.push(890);
+    printf("%d\n", elementok(p, 34));
+    printf("%d\n", elementok(p, 97));
+    printf("%d\n", elementok(p, 11));
+    printf("%d\n", elementok(p, 50));
+    printf("%d\n", elementok(p, 101));
+    printf("%d\n", elementok(p, 15));
+    printf("%d\n", elementok(p, 70));
+    printf("%d\n", elementok(p, 94));
+    printf("%d\n", elementok(p, 53));
+    printf("%d\n", elementok(p, 45));
+    return 0;
+}
+deveria ser
+-1
+-1
+540
+-1
+-1
+152
+-1
+-1
+-1
+-1
+
+mas deu
+0
+0
+540
+0
+0
+152
+0
+0
+0
+0
+
+Teste 20: correto! +0.050
+Nota exercicio 1: 0.7
+Procurando exercício 2...
+Procurando exercício 3...
+Procurando exercício 4...
+Procurando exercício 5...
+Procurando exercício 6...
+Procurando exercício 7...
+Procurando exercício 8...
+Procurando exercício 9...
+Procurando exercício 10...
+Procurando exercício 11...
+Nota total: 0.70
+{"scores": {"ex1": 0.7, "ex2": 0.0, "ex3": 0.0, "ex4": 0.0, "ex5": 0.0, "ex6": 0.0, "ex7": 0.0, "ex8": 0.0, "ex9": 0.0, "ex10": 0.0, "ex11": 0.0}}
