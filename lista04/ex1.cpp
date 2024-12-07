@@ -2,7 +2,7 @@
 #include <stack>
 
 //declaração da função stack que retonra o kesimo elemto par
-int elemenK(std::stack<int>& pilha, int k){
+int elementok(std::stack<int>& pilha, int k){
     std::stack<int> cpy_pilha;
     cpy_pilha  = pilha;
     int cont =0;
@@ -33,7 +33,7 @@ for(int e=5; e>=1; e--) //inserindo elementos na pilha
     pilha.push(e); //push -> insere elementos
 }
 // TESTE DE FATO
-std::cout << elemenK(pilha, 2) << std::endl;
+std::cout << elementok(pilha, 2) << std::endl;
 
 while(not pilha.empty()) {
     std::cout << pilha.top() << " " ;
