@@ -1,43 +1,32 @@
 #include <iostream>
 #include <vector>
+#include <set>
 
+//https://www.geeksforgeeks.org/set-in-cpp-stl/
+std::set<int> converte_set(std::vector<int> v){
+    std::set<int> aux;
 
+    for(int i : v)
+    {
+        aux.insert(i); // Insere elementos no set de fromma ordeanda e sem repetição
+    }
+    return aux;
+}
+// remove o elemneto n 
 std::vector<int> retira(std::vector<int> v, int n)
 {
-    std::vector<int> cpy_v = v;
+    std::set<int> set_v = converte_set(v);
+    // Retirando elemento do set
+    set_v.erase(n);
 
-    for (int i = 0; i < cpy_v.size();)
-    {
-        // Se o valor for igual ao número a ser removido
-        if (cpy_v[i] == n)
-        {
-            cpy_v.erase(cpy_v.begin() + i); // Remove o elemento em i
-        }
-        else
-        {
-            i++; // incrementa caso contrario
-        }
+    // Cria um novo vetor 
+    std::vector<int> aux_v;
+    for(int a : set_v) {
+        aux_v.push_back(a); // adiciona os elementos 
     }
-
-    //bubble sort que ordena e apaga elementos repetidos na cpy_v
-    for (int i = 0; i < cpy_v.size(); i++) 
-    {
-        for (int j = 0; j < cpy_v.size() - i - 1; j++)  
-        {
-            //realiza a troca
-            if (cpy_v[j] > cpy_v[j + 1]) 
-            {
-                std::swap(cpy_v[j], cpy_v[j + 1]);
-            }
-            //apaga a partir da segunda repeticao
-            if(cpy_v[j] == cpy_v[j + 1]){
-                 cpy_v.erase(cpy_v.begin() + j + 1);
-            }
-        }
-    }
-
-    return cpy_v;
+    return aux_v;
 }
+
 
 #include <iostream>
 int main() {
