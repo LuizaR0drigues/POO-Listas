@@ -2,8 +2,7 @@
 #include <stack>
 #include <queue>
 #include <vector>
-#include <limits>
-#include <unordered_map>
+
 
 
 std::string jogo(std::stack<int> cartas, std::queue<std::string> jogadores){
