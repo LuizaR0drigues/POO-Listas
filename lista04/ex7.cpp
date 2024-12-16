@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <regex>
-#include <vector>
+
 
 
 std::string retira(std:: string texto, char c){
