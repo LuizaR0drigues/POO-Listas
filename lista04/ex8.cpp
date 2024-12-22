@@ -7,6 +7,7 @@ void ordena_par(Matriz &M)
 {
     std::vector<int> cont(M.size(), 0); // vetor zerado do tamanho de linha de M
 
+    //percorre a matriz e contabiliza a qunatdiade de num pares por linha
     for (int i = 0; i < M.size(); i++)
     {
         for (auto &elem : M[i])
@@ -18,6 +19,8 @@ void ordena_par(Matriz &M)
         }
     }
 
+    //com esse valores iremos ordenar as linhas da matriz
+    //Pelo maior numero de num pares por linhas, e em caso de empate, ordena pela primeira ocorrencia da linha
     for (int i = 0; i < M.size(); i++)
     {
         for (int j = 0; j < M.size() - 1; j++)
