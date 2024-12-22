@@ -1,0 +1,516 @@
+Versão do G++:
+g++ (Debian 12.2.0-14) 12.2.0
+Copyright (C) 2022 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Varificando data de envio...
+AGORA: 2024-12-21 23:46:13.534073-03:00
+PRAZO MÁXIMO: 2024-12-22 23:59:59-03:06
+Testando sua solucao...
+Procurando exercício 1...
+Exercício 1...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex1.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 1: 1.0
+Procurando exercício 2...
+Exercício 2...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex2.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 2: 1.0
+Procurando exercício 3...
+Procurando exercício 4...
+Exercício 4...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex4.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 4: 1.0
+Procurando exercício 5...
+Exercício 5...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex5.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 5: 1.0
+Procurando exercício 6...
+Exercício 6...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex6.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 6: 1.0
+Procurando exercício 7...
+Exercício 7...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex7.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 7: 1.0
+Procurando exercício 8...
+Exercício 8...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex8.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 8: 1.0
+Procurando exercício 9...
+Exercício 9...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex9.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 9: 1.0
+Procurando exercício 10...
+Procurando exercício 11...
+Exercício 11...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex11.cpp" 
+Teste 1 deu errado!
+Andre Smaira tem 33 anos e mora em São Carlos-SP, Brasil
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  stoi
+
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+Teste 2 deu errado!
+Dr. Davi Lucca da Luz tem 91 anos e mora em Ribeiro de Aragão-MG, Cazaquistão
+
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  stoi
+
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+Teste 3 deu errado!
+Alícia da Mata tem 100 anos e mora em Novais da Prata-MA, Usbequistão
+
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  stoi
+
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+Teste 4 deu errado!
+Luiz Otávio Cassiano tem 57 anos e mora em Oliveira do Amparo-MS, Mali
+
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  stoi
+
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+Teste 5 deu errado!
+Ana Beatriz Cavalcanti tem 43 anos e mora em Albuquerque-SC, Samoa
+
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  stoi
+
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+Teste 6 deu errado!
+Rhavi Câmara tem 82 anos e mora em Martins da Praia-PI, Fiji
+
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  stoi
+
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+Teste 7 deu errado!
+Heitor Sá tem 75 anos e mora em Cirino-SE, México
+
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  stoi
+
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+Teste 8 deu errado!
+Liz da Rosa tem 123 anos e mora em Sampaio do Amparo-RN, Guiana
+
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  stoi
+
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+Teste 9 deu errado!
+Maria Cecília da Conceição tem 44 anos e mora em Cardoso do Galho-AC, Antígua e Barbuda
+
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  stoi
+
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+Teste 10 deu errado!
+Maria Cecília Mendes tem 129 anos e mora em da Luz do Sul-RN, Irlanda
+
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  stoi
+
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+Teste 11 deu errado!
+Arthur Gabriel Novais tem 122 anos e mora em Gonçalves-SE, Malásia
+
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  stoi
+
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+Teste 12 deu errado!
+Bruna Porto tem 58 anos e mora em Cavalcante do Oeste-PI, Navassa Island
+
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  stoi
+
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+Teste 13 deu errado!
+Maya Nunes tem 51 anos e mora em Silva do Galho-MT, Dinamarca
+
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  stoi
+
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+Teste 14 deu errado!
+Letícia Sampaio tem 98 anos e mora em da Paz-AP, Hungria
+
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  stoi
+
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+Teste 15 deu errado!
+Olívia Fogaça tem 97 anos e mora em Porto-TO, Angola
+
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  stoi
+
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+Teste 16 deu errado!
+Pedro Henrique Pires tem 43 anos e mora em Sousa-MS, Timor Leste
+
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  stoi
+
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+Teste 17 deu errado!
+Mariah Abreu tem 84 anos e mora em Barros de Aparecida-AL, Costa do Marfim
+
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  stoi
+
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+Teste 18 deu errado!
+Carolina Silveira tem 72 anos e mora em Cavalcante de Minas-BA, Guiné Equatorial
+
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  stoi
+
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+Teste 19 deu errado!
+Nathan Câmara tem 79 anos e mora em Nunes-AC, Letônia
+
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  stoi
+
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+Teste 20 deu errado!
+Catarina Duarte tem 46 anos e mora em Câmara-AP, Peru
+
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  stoi
+
+#include<iostream>
+#include<string>
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
+    return 0;
+}
+Nota exercicio 11: 0.0
+Nota total: 8.00
+{"scores": {"ex1": 1.0, "ex2": 1.0, "ex3": 0.0, "ex4": 1.0, "ex5": 1.0, "ex6": 1.0, "ex7": 1.0, "ex8": 1.0, "ex9": 1.0, "ex10": 0.0, "ex11": 0.0}}
