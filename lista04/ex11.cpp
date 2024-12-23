@@ -11,7 +11,7 @@ private:
 public:
     Pessoa(const std::string &str)
     {
-        std::cout <<  str << std::endl;
+        //std::cout <<  str << std::endl;
         //  Regex  nome, idade, cidade, UF e país
         std::regex reg(R"((.*?)\stem (\d+) anos e mora em ([^,]+)-([A-Z]{2}), +(.+))");
         
