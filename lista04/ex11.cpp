@@ -6,25 +6,26 @@ class Pessoa
 {
 private:
     std::string _nome, _cidade, _uf, _pais;
-    int _idade;
+    int  _idade;
 
 public:
     Pessoa(const std::string &str)
     {
-        // std::cout <<  str << std::endl;
+        std::cout <<  str << std::endl;
         //  Regex  nome, idade, cidade, UF e país
-        std::regex reg(R"(([^,]+) tenho (\d+) anos e moro em (.+)-([A-Z]{2}),([^\"]+))");
+        std::regex reg(R"((.*?)\stem (\d+) anos e mora em ([^,]+)-([A-Z]{2}), +(.+))");
+        
         std::smatch match;
 
         std::regex_search(str, match, reg);
 
-        /*teste
+        /*/teste
         std::cout << "Nome:" << match[1] << std::endl;
         std::cout << "Idade:" << match[2] << std::endl;
         std::cout << "Cidade:" << match[3] << std::endl;
         std::cout << "UF:" << match[4] << std::endl;
-        std::cout << "País:" << match[5] << std::endl;
-        */
+        std::cout << "País:" << match[5] << std::endl;*/
+        
         // transferindo valores
         _nome = match[1];
         _idade = std::stoi(match[2].str()); // Converte int
@@ -43,10 +44,9 @@ public:
         return os;
     }
 };
-
-int main()
-{
-    std::cout << Pessoa("André tenho 34 anos e moro em São Carlos-SP,Brasil");
-
+int main() {
+    std::string frase;
+    std::getline(std::cin, frase);
+    std::cout << Pessoa(frase);
     return 0;
 }
